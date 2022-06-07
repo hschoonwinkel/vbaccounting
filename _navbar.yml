@@ -2,18 +2,12 @@ name: "Mywebsite"
 title: "Excel VBA"
 type: inverse
 left:
-  - text: "About me"
+  - text: "Textbook"
     menu:
-      - text: "Learn more about me"
-        href: ./aboutme.html
-  - text: "Project"
-    menu:
-       - text: "Project part 1"
+       - text: "Theory"
          href: ./project1.html
-       - text: "Project part 2"
+       - text: "Exercises"
          href: ./project2.html
-  - text: "Contact"
-    href: ./contact.html
 right:
   - icon: fa-github fa-lg
     href: https://github.com/githubusername/mywebsite

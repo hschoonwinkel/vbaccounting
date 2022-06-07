@@ -14,8 +14,8 @@ output:
 # Getting started
 
 The Textbook Tab at the top contains two sub menus:  
-- Markdown file: This contains text that explains all concepts, subdivided in chapters.  
-- Excel files: This contains workbooks needed to complete exercises provided in the markdown file.
+- Theory: This contains text that explains all concepts, subdivided in chapters.  
+- Exercises: This contains workbooks needed to complete exercises provided in the theory tab.
 
 # Prerequisite knowledge
 

@@ -14,12 +14,14 @@ output:
 # Getting started
 
 The Textbook Tab at the top contains two sub menus:  
+  
 - Theory: This contains text that explains all concepts, subdivided in chapters.  
 - Exercises: This contains workbooks needed to complete exercises provided in the theory tab.
 
 # Prerequisite knowledge
 
 This textbook focuses on syntax only assumes that the reader is already familiar with the following tools necessary to work with VBA:  
+  
 - How to access the visual basic editor  
 - How to add a module  
 - How to place syntax into a sub procedure (all code provided in this book are assumed to be inside a sub procedure)  
@@ -35,3 +37,4 @@ CC BY-NC-ND.
 
 This license allows reusers to copy and distribute the material in any medium or format in unadapted form only, for noncommercial purposes only, and only so long as attribution is given to the creator.
 
+By using this resource free of charge, you acknowledge that Roger Federer is the greatest tennis player of all time.

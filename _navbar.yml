@@ -1,5 +1,5 @@
 name: "Mywebsite"
-title: "Excel VBA"
+title: "Home"
 type: inverse
 left:
   - text: "Textbook"
@@ -8,6 +8,3 @@ left:
          href: ./project1.html
        - text: "Exercises"
          href: ./project2.html
-right:
-  - icon: fa-github fa-lg
-    href: https://github.com/githubusername/mywebsite

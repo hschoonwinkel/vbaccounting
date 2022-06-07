@@ -495,21 +495,6 @@ alt="" />
 <p>Note how you need to place a string in quotation marks, while it is
 not required for a number.</p>
 </div>
-<div id="chapter-1-exercises" class="section level3">
-<h3>Chapter 1 Exercises</h3>
-<p>Use the workbook provided and complete the form provided by entering
-your details in the provided blue areas, using VBA. Code your questions
-to all the below questions within one macro in the VB Editor. Rerun your
-macro after completing each question, to make sure your macro works
-correctly. Refer to the cell address by using “range”. Thereafter,
-reperform all the below questions in a new macro, by referring to the
-cell addresses by using “cells”.</p>
-<p>Q1: Enter your name in cell B1. Q2: Enter your surname in cell B2.
-Q3: Enter your year of birth in cell B3. Q4: Enter your age in cell B4.
-Q5: Calculate the current year in cell B6, by adding your year of birth
-(B3) to your age (B4). Q6: Assign all cells in the range C9:E11 equal to
-the value of 420.</p>
-</div>
 </div>
 <div id="chapter-2-variables" class="section level1">
 <h1>Chapter 2: Variables</h1>
@@ -663,56 +648,6 @@ the cell with a row of 1 and a column of [donut+2]. As donut is equal to
 the cell with a row of 1 and a column of 3, i.e. C1. The range is
 therefore from A1 to C1. We assign this range equal to a value of 5.</p>
 </div>
-<div id="chapter-2-exercises" class="section level3">
-<h3>Chapter 2 Exercises</h3>
-<p>Use the workbook provided and complete the form provided by entering
-your details in the provided blue areas, using VBA within one macro.
-Rerun the macro after each question to test accuracy.</p>
-<p>Q1: Declare a variable named ‘nameSurname’. Assign it a value equal
-to your name and surname. Set the value of cell B1 equal to the value of
-that variable.</p>
-<p>Q2: Declare a variable named ‘yearBirth’. Assign it a value equal to
-your year of birth. Set the value of cell B2 equal to the value of that
-variable.</p>
-<p>Q3: Declare a variable named ‘age’. Assign it a value equal to the
-value as found in cell F1. Set the value of cell B3 equal to the value
-of that variable.</p>
-<p>Q4: Create a macro button for your macro created thus far.</p>
-<p>Q5: Change the value in cell F1 to your actual age, using manual
-traditional Excel (no VBA).</p>
-<p>Q6: Rerun the macro created in Q3, by pressing the button created in
-Q4. Did the value in cell B3 change to your actual age? If not, you did
-not do Q3 correctly. Make sure you did not “hard code” the age into your
-formula by expressing it directly, but rather expressed that the age
-should equal whatever value is found in cell F1.</p>
-<p>Q7: Declare a variable named ‘idNumber’. Assign it a value equal to
-your ID number. Set the value of cell B4 equal to the value that
-variable.</p>
-<p>Q8: Declare a variable named ‘currentYear’. Assign it a value equal
-to the ‘yearBirth’ variable plus the ‘age’ variable. Set the value of
-cell B6 equal to the value of the ‘cuurentYear’ variable.</p>
-<p>Q9: Increment the ‘age’ variable with 5. Rerun the macro. Nothing
-will change on the sheet. The answer obtained in Q8 for cell B6 would
-not change, despite referencing the ‘age’ variable, as we only changed
-the value of the variable after that line of code.</p>
-<p>Q10: Set the value of ‘currentYear’ once again equal to the
-‘yearBirth’ variable plus the ‘age’ variable again. Set the value of
-cell B6 equal to the value of that variable. Running the macro again
-should now change the value in cell B6 by incrementing it with 5, as the
-‘age’ variable, which is used to calculate the ‘currentYear’ value, has
-incremented with 5 in the previous line of code.</p>
-<p>Q11: Declare a variable named ‘i’. Set it equal to the value as found
-in cell B10. Then declare a variable named ‘j’ and set it equal to the
-value as found in cell B11. Then set the value of the cell with the row
-of i and column j equal to the text value “Federer” (in the VB
-Editor).</p>
-<p>Q12: Change the values in cells B10 and B11 to any numbers of your
-liking, using manual traditional Excel (no VBA).</p>
-<p>Q13: Rerun the macro in which your code for Q11 was placed. In which
-cell did the word “Federer” now appear? Did the word “Federer” still
-appear in cell D17 as well, or did the contents in cell D17 disappear?
-Why/why not?</p>
-</div>
 </div>
 <div id="chapter-3-if-statement" class="section level1">
 <h1>Chapter 3: If statement</h1>
@@ -839,41 +774,6 @@ cell A1 is larger than 50, but not the value as found in cell B1. As the
 Or-function only requires one of the stated conditions to be met, the
 word “Passed” is displayed in Cell C1.</p>
 </div>
-<div id="chapter-3-exercises" class="section level3">
-<h3>Chapter 3 Exercises</h3>
-<p>Use the workbook provided and code your questions to all the below
-questions within one macro in the VB Editor. Rerun your macro after
-completing each question, to make sure your macro works correctly.</p>
-<p>Q1: Enter a body temperature in cell C1, using manual traditional
-Excel (no VBA). Using VBA, write code that would display the message
-“Covid warning” in cell C2 if the temperature entered in cell C1 is
-above 37,5 degrees Celsius.</p>
-<p>Q2: Enter an age in cell C4, using manual traditional Excel (no VBA).
-Using VBA, write code that would display the message “You may enter” in
-cell C5 if the age entered in cell C4 is 18 or above. Otherwise, the
-message “You may not enter” should appear.</p>
-<p>Q3: Enter a cricket batting average (usually between 10 and 50) in
-cell C17 and a batting strike rate (usually between 70 and 120) in cell
-C8, using manual traditional Excel (no VBA). Batsmen are picked for the
-cricket team if both of the following conditions are met: their batting
-average should be 40 or higher, and their batting strike rate should be
-80 or higher. Write Using VBA, write code that would display the message
-“Yes” in cell C9 if the batsmen should be picked for the team. The
-message “No” should appear if the batsmen should not be picked for the
-team.</p>
-<p>Q4: Enter a cricket bowling average (usually between 20 and 40) in
-cell C11 and a bowling strike rate (usually between 40 and 60) in cell
-C12, using manual traditional Excel (no VBA). Bowlers are picked for the
-cricket team if either of the following conditions are met: their
-bowling average should be 30 or lower, or their bowling strike rate
-should be 50 or lower. Write Using VBA, write code that would display
-the message “Yes” in cell C13 if the bowler should be picked for the
-team. The message “No” should appear if the bowler should not be picked
-for the team.</p>
-<p>You can change your values in the blue input cells and rerun your
-macro to make sure that your macro correctly caters for all possible
-scenarios.</p>
-</div>
 </div>
 <div id="chapter-4-copy-paste" class="section level1">
 <h1>Chapter 4: Copy &amp; Paste</h1>
@@ -917,14 +817,6 @@ alt="" />
 </div>
 <p>The “Current Region” function in VBA is equivalent to pressing
 “Ctrl+A” to select the whole area in standard Excel.</p>
-</div>
-<div id="chapter-4-exercises" class="section level3">
-<h3>Chapter 4 Exercises</h3>
-<p>Use the workbook provided and code your questions to all the below
-questions within one macro in the VB Editor. Rerun your macro after
-completing each question, to make sure your macro works correctly.</p>
-<p>Q1: Copy the contents of cell A4 and paste it to cell C6. Q2: Copy
-the contents of the range A12:B15 and paste it to E15:G18</p>
 </div>
 </div>
 <div id="chapter-5-determine-last-row" class="section level1">
@@ -1006,12 +898,6 @@ which is 7.</p>
 <p>This method is recommended, as it will always work, regardless of
 whether your database contains empty cells.</p>
 </div>
-<div id="chapter-5-exercises" class="section level3">
-<h3>Chapter 5 Exercises</h3>
-<p>Use the workbook provided and declare a variable named “lastrow” and
-assign it a value equal to the lastrow of the database given. Assign
-cell G1 equal to the value of the ‘lastrow’ variable.</p>
-</div>
 </div>
 <div id="chapter-6-boxes" class="section level1">
 <h1>Chapter 6: Boxes</h1>
@@ -1051,21 +937,6 @@ alt="" />
 </div>
 <p>How to create a user form falls outside the scope of this
 textbook.</p>
-</div>
-<div id="chapter-6-exercises" class="section level3">
-<h3>Chapter 6 Exercises</h3>
-<p>You are provided with a dataset containing a list of individuals,
-containing their name, year of birth and age. A button, for which no
-macro has yet been written, is also provided. When the button is
-pressed, a message should appear, asking the user for his/her name.
-After the user inputted a name and clicked OK, a new message should
-appear, asking the user for his/her year of birth. After the user
-inputted a number and clicked OK, the compiler should add an entry to
-the dataset (tip: determine the last row as done in Chapter 5, and add
-one to that variable to determine in which row the entry should be
-added), containing the name, year of birth and the age in 2022 (which it
-should calculate). A message should then appear, informing the user that
-the entry has been successfully added.</p>
 </div>
 </div>
 <div id="chapter-7-workbook-scopes" class="section level1">
@@ -1353,19 +1224,18 @@ class="sourceCode vb"><code class="sourceCode monobasic"><span id="cb38-1"><a hr
 cells reference, if we already state ‘redWs’ before the range referece.
 It is indeed odd. To explore this, let us look at similar scenarios.</p>
 <div class="sourceCode" id="cb39"><pre
-class="sourceCode vb"><code class="sourceCode monobasic"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a>ThisWorkbook.Worksheets(<span class="st">&quot;Sheet1&quot;</span>).Range(<span class="st">&quot;A1&quot;</span>).Value = 2</span></code></pre></div>
-<p>In the above code, we have our main object, being this workbook. This
-object is followed by a sub-object, being one of its worksheets. This
-sub-object is followed by a sub-object, being one of its ranges. The VB
+class="sourceCode vb"><code class="sourceCode monobasic"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a>Worksheets(<span class="st">&quot;Sheet1&quot;</span>).Range(<span class="st">&quot;A1&quot;</span>).Value = 2</span></code></pre></div>
+<p>In the above code, we have our main object, being this worksheet.
+This object is followed by a sub-object, being one of its ranges. The VB
 Editor assumes that when starting a new “level” of reference, you want
 to keep the scopes of its predecessors.</p>
 <p>It would therefore seem logical that the following code should
 work:</p>
 <div class="sourceCode" id="cb40"><pre
-class="sourceCode vb"><code class="sourceCode monobasic"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a>ThisWorkbook.Worksheets(<span class="st">&quot;Sheet1&quot;</span>).Range(cells(1,1),cells(5,1)).Value = 5</span></code></pre></div>
+class="sourceCode vb"><code class="sourceCode monobasic"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a>Worksheets(<span class="st">&quot;Sheet1&quot;</span>).Range(cells(1,1),cells(5,1)).Value = 5</span></code></pre></div>
 <p>When the code reaches cells A1 and A5, it should remember by its
-logical order that we are busy within the scope of this workbook and the
-worksheet titled sheet1?</p>
+logical order that we are busy within the scope of this worksheet titled
+sheet1?</p>
 <p>Create a new blank Excel workbook, and add another sheet, so there
 are two sheets: Sheet1 and Sheet2. Click on Sheet1 to make sure that
 that sheet is active. Then paste the above code in the VB editor. The
@@ -1390,79 +1260,49 @@ worksheet for the cells as for the range, even though logically it seems
 like it should. The cells reference therefore works a bit different than
 other references, as it the VB Editor does <u>not</u> assume that when
 starting a cells reference, you want to keep the scopes of its
-predecessors, unlike the case with range references or worksheets
-references. When you use the cell references, the VB Editor forgets
-previous stated scopes, and starts fresh.</p>
+predecessors, unlike the case with range references. When you use the
+cell references, the VB Editor forgets previous stated scopes, and
+starts fresh.</p>
 <p>Let’s inspect the first code again:</p>
 <div class="sourceCode" id="cb41"><pre
-class="sourceCode vb"><code class="sourceCode monobasic"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a>ThisWorkbook.Worksheets(<span class="st">&quot;Sheet1&quot;</span>).Range(<span class="st">&quot;A1&quot;</span>).Value = 2</span></code></pre></div>
+class="sourceCode vb"><code class="sourceCode monobasic"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a>Worksheets(<span class="st">&quot;Sheet1&quot;</span>).Range(<span class="st">&quot;A1&quot;</span>).Value = 2</span></code></pre></div>
 <p>the VB Editor reads it as follows:</p>
 <ul>
-<li>ThisWorkbook: Make sure we work within this workbook in which the
-macro is written.</li>
-<li>Worksheets(“Sheet1”): I am taking into account the previous workbook
-reference, and now we are going to make sure we work within the
-worksheet titled “Sheet1” within this workbook.</li>
-<li>Range: I am taking into account the previous workbook reference as
-well as the previous worksheet reference , and now we are going to make
-sure we work within the range A1.</li>
+<li>Worksheets(“Sheet1”): Make sure we work within the worksheet titled
+“Sheet1”.</li>
+<li>Range: I am taking into account the previous worksheet reference,
+and now we are going to make sure we work within the range A1.</li>
 </ul>
 <p>Now let us add a cells reference:</p>
 <div class="sourceCode" id="cb42"><pre
-class="sourceCode vb"><code class="sourceCode monobasic"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a>ThisWorkbook.Worksheets(<span class="st">&quot;Sheet1&quot;</span>).Range(cells(1,1),cells(5,1)).Value = 5</span></code></pre></div>
+class="sourceCode vb"><code class="sourceCode monobasic"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a>Worksheets(<span class="st">&quot;Sheet1&quot;</span>).Range(cells(1,1),cells(5,1)).Value = 5</span></code></pre></div>
 <p>the VB Editor reads it as follows:</p>
 <ul>
-<li>ThisWorkbook: Make sure we work within this workbook in which the
-macro is written.</li>
-<li>Worksheets(“Sheet1”): I am taking into account the previous workbook
-reference, and now we are going to make sure we work within the
-worksheet titled “Sheet1” within this workbook.</li>
-<li>Range: I am taking into account the previous workbook reference as
-well as the previous worksheet reference , and now we are going to make
-sure we work within the range as will follow after this</li>
+<li>Worksheets(“Sheet1”): We are going to make sure we work within the
+worksheet titled “Sheet1”.</li>
+<li>Range: I am taking into account the previous worksheet reference,
+and now we are going to make sure we work within the range as will
+follow after this</li>
 <li>Cells: I am completely going to ignore previous references and start
 fresh. I am going to assume that cells(1,1) refers to cell A1 of the
-current workbook of the current worksheet, and I am going to assume that
-cells(5,1) refers to cell A5 of the current workbook of the current
-worksheet.</li>
+current worksheet, and I am going to assume that cells(5,1) refers to
+cell A5 of the current worksheet.</li>
 </ul>
-<p>When we had Sheet1 active, the code worked, as the “current workbook”
-and “current worksheets” that cells automatically uses, were by accident
-the predeceasing references. But as soon as we activated Sheet2 we got
-an error, because the VB Editor read it as follows: use cell A1 to A5
+<p>When we had Sheet1 active, the code worked, as the “current
+worksheets” that cells automatically uses, were by accident the
+predeceasing references. But as soon as we activated Sheet2 we got an
+error, because the VB Editor read it as follows: use cell A1 to A5
 within the current worksheet, which is to be found in the worksheet
 titled “Sheet1”. As the current worksheet is Sheet2, the code gives an
 error. Therefore the need to explicitly state the previous references
 before the cells reference again:</p>
 <div class="sourceCode" id="cb43"><pre
-class="sourceCode vb"><code class="sourceCode monobasic"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a>ThisWorkbook.Worksheets(<span class="st">&quot;Sheet1&quot;</span>).Range(ThisWorkbook.Worksheets(<span class="st">&quot;Sheet1&quot;</span>).cells(1,1),ThisWorkbook.Worksheets(<span class="st">&quot;Sheet1&quot;</span>).cells(5,1)).Value = 5</span></code></pre></div>
+class="sourceCode vb"><code class="sourceCode monobasic"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a>Worksheets(<span class="st">&quot;Sheet1&quot;</span>).Range(Worksheets(<span class="st">&quot;Sheet1&quot;</span>).cells(1,1),Worksheets(<span class="st">&quot;Sheet1&quot;</span>).cells(5,1)).Value = 5</span></code></pre></div>
 <p>When you correctly restate the references before the cells
 references, it is referred to as “qualifying” your cells references.
 Therefore the error when we did not restate it, is that our cells
 references were unqualified.</p>
 </div>
-</div>
-<div id="chapter-7-exercises" class="section level3">
-<h3>Chapter 7 Exercises</h3>
-</div>
-<div id="part-i" class="section level3">
-<h3>Part I</h3>
-<p>Your are presented with 2 worksheets: one sheet containing players
-from Manchester City Football Club, and the other sheet containing
-players from Manchester United Football Club. In the third worksheet,
-titled “All Manchester”, you want to combine these two pool of players
-into one database. Using VBA, create code that would execute this.</p>
-</div>
-<div id="part-ii" class="section level3">
-<h3>Part II</h3>
-<p>Your are presented with 2 workbooks: one workbook containing item
-sales for July, and the other workbook containing item sales for August.
-In the third workbook, titled “Combined”, you want to combine these two
-months of sales into one database. Two macros should be written inside
-the Combined workbook. The first macro should import the separate July
-and August workbooks as separate worksheets within the Combined workbook
-(use the template code provided in Chapter 7). The second macro should
-then combine these two months into one database.</p>
 </div>
 </div>
 <div id="chapter-8-loops" class="section level1">
@@ -1975,92 +1815,8 @@ to assign the value “Federer” to cell A1 of each worksheet:</p>
 class="sourceCode vb"><code class="sourceCode monobasic"><span id="cb51-1"><a href="#cb51-1" aria-hidden="true" tabindex="-1"></a><span class="kw">Dim</span> i <span class="kw">as</span> <span class="dt">integer</span></span>
 <span id="cb51-2"><a href="#cb51-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb51-3"><a href="#cb51-3" aria-hidden="true" tabindex="-1"></a><span class="kw">For </span>i = 1 <span class="kw">to</span> 10</span>
-<span id="cb51-4"><a href="#cb51-4" aria-hidden="true" tabindex="-1"></a>    ThisWorkbook.Worksheets(i).Range(<span class="st">&quot;A1&quot;</span>).Value = <span class="st">&quot;Federer&quot;</span></span>
+<span id="cb51-4"><a href="#cb51-4" aria-hidden="true" tabindex="-1"></a>    Worksheets(i).Range(<span class="st">&quot;A1&quot;</span>).Value = <span class="st">&quot;Federer&quot;</span></span>
 <span id="cb51-5"><a href="#cb51-5" aria-hidden="true" tabindex="-1"></a><span class="kw">Next </span>i</span></code></pre></div>
-</div>
-<div id="chapter-8-exercises" class="section level3">
-<h3>Chapter 8 Exercises</h3>
-</div>
-<div id="part-i---merge-worksheets" class="section level3">
-<h3>Part I - Merge Worksheets</h3>
-<p>You are presented with a workbook containing sales made for each
-colour product in separate sheets. Your task is to merge all these
-separate datasets into one dataset in the worksheet titled ‘Merged’.</p>
-<p>Tips: Loop through all colour worksheets (start at sheet 2) and for
-each each sheet, determine the last row to determine the range to be
-copied, and determine where to start pasting in the ‘Merged sheet’ (row
-after its last row) and paste it over.</p>
-</div>
-<div id="part-ii---merge-workbooks" class="section level3">
-<h3>Part II - Merge Workbooks</h3>
-<p>Your are presented with separate workbooks containing sales made for
-each colour product. Your tasks are to:</p>
-<ol style="list-style-type: decimal">
-<li>Import every workbook into one single workbook as separate
-worksheets AND rename each worksheet to the colour of that dataset.</li>
-<li>Merge all these separate datasets into one dataset.</li>
-</ol>
-</div>
-<div id="part-iii---reverse-merge-extract" class="section level3">
-<h3>Part III - Reverse Merge (Extract)</h3>
-<p>Your are presented with a database containing sales made for all
-colour products. Your task is to create a separate dataset for all
-respective colours in separate worksheets (basically the reverse of task
-2). After the macro has been executed, a message should appear informing
-the user that the macro ran successfully. Allocate this macro to the
-button provided.</p>
-<p>Tips: You will have a loop within a loop. The outer loop will loop
-through each entry in the dataset in the ‘Merged’ sheet, while the inner
-loop will loop through each worksheet. First, loop through the entries
-in the dataset. For each entry, we need to find the sheet who’s name
-matches the colour of that product. This is done by looping through all
-the colour worksheets, then if the name of the worksheet (in inner loop)
-equals the colour of our entry (in the outer loop), then we need to
-determine where to start pasting in that sheet, and paste the entry
-there.</p>
-</div>
-<div id="part-iv---semi-structured-dataset" class="section level3">
-<h3>Part IV - Semi Structured Dataset</h3>
-<p>Your are presented with a database containing sales made for all
-colour products. This dataset is semi-structured. Your task is to
-transform this dataset into a structured relational dataset in the other
-worksheet provided.</p>
-<p>Tips: Create a variable that would store the colour name. Loop
-through each row in the semi-structured dataset. If the value of the
-cell in column A is “Colour:” then store the value next to it as the
-value for the colour variable. If the value of the cell in column A is
-“Date” then do nothing (just have no code in that if section). Otherwise
-(if none of the previous two conditions are met), the date, amount and
-colour of that entry should be pasted to the structured dataset. Note:
-do not use copy and paste. Rather first assign column A of structured
-dataset equal to the value as found in column A of the semi-structured
-dataset, then assign column B of the structured dataset equal to
-variable of colour at that stage, then assign column C of the structured
-dataset equal to the value as found in column B of the semi-structured
-dataset.</p>
-</div>
-<div id="part-v---balance-updates" class="section level3">
-<h3>Part V - Balance Updates</h3>
-<p>You are required to build a system that would enable a user to easily
-add an invoice or payment to a customer account, and update its
-outstanding balance accordingly.</p>
-<p>You are presented with a workbook containing:</p>
-<ul>
-<li>A worksheet titled ‘Buttons’, containing two buttons</li>
-<li>A worksheet for every customer, titled by its customer number.</li>
-</ul>
-<p>When clicking on the ‘Add invoice’ or ‘Add Payment’ button, a message
-should appear asking the user to input the customer number to whom this
-invoice/payment should be levied. After the user inputted the number and
-clicked ‘OK’, a message should then appear asking the user to input the
-invoice/payment amount. After the user inputted the amount and clicked
-‘OK’, an entry should be added to the applicable customer account in
-that worksheet, containing the date of the document (hint: use ‘today()’
-function), the document type (pending on which button clicked), the
-amount (if it is a payment, it should be negative), and the updated
-balance of the customer. A message should then appear indicating to the
-user that the transaction was added successfully.</p>
-<p>Create two separate macros for each button respectively.</p>
 </div>
 </div>
 <div id="chapter-9-arrays" class="section level1">
@@ -2158,38 +1914,6 @@ dynamic arrays (dynamic arrays refer to arrays where the size is
 determined by the size of the presented dataset, which in this case we
 calculated with “arrayLastPos”). When then assign whole range of the
 dataset (excluding headings) to the array.</p>
-</div>
-<div id="chapter-9-exercises" class="section level3">
-<h3>Chapter 9 Exercises</h3>
-<p>You are presented with a sheet containing sales of red, blue, green
-and yellow items respectively. The goal is to create an extract of each
-colour to their own respective datasets. Macros have already been
-written and allocated to buttons that will enable this. There are 3
-methods that this exercise can be done, for which 3 separate macros were
-created:</p>
-<ol style="list-style-type: decimal">
-<li><p>Copy and Paste: For each row, determine if it is a certain
-colour, and if so, copy that region (line-item columns) and paste it
-under the applicable colour heading.</p></li>
-<li><p>Assign values: For each row, determine if it is a certain colour,
-and if so, assign the cells of the first empty line under the colour
-section equal to the values as found in that row in the complete
-dataset.</p></li>
-<li><p>Arrays: Assign the complete dataset to an array. Then create new
-arrays for each colour. Loop through all elements of the total array,
-and if the colour of that element is a certain colour, assign the
-elements of that colour’s array equal to those values in the total
-array. Then finally, assign the region of that colours extract equal to
-the colours’ array.</p></li>
-</ol>
-<p>Inspect the syntax of the array method and obtain an understanding of
-its workings.</p>
-<p>The goal of this exercise is to indicate the difference in time it
-takes to execute each macro (the extracts should be deleted each time
-before executing the next macro, as they all result in the same thing).
-You will notice that the first method could take up to a minute, while
-the second method is a bit faster, and the third method (using arrays)
-takes less than one second!</p>
 </div>
 </div>
 <div id="chapter-10-functions" class="section level1">
@@ -2436,406 +2160,6 @@ class="sourceCode vb"><code class="sourceCode monobasic"><span id="cb62-1"><a hr
 <span id="cb62-25"><a href="#cb62-25" aria-hidden="true" tabindex="-1"></a>    convertToRand = forreignArr</span>
 <span id="cb62-26"><a href="#cb62-26" aria-hidden="true" tabindex="-1"></a><span class="kw">End Function</span></span></code></pre></div>
 </div>
-</div>
-<div id="extensive-example-extract-types-of-products"
-class="section level3">
-<h3>Extensive example: Extract types of products</h3>
-<p>This example will illustrate how functions can be used to “reperform”
-a certain block of code. The example used will be similar to the task of
-extracting samples in a working paper during an external audit and will
-therefore display the utility of functions in practice. We want to
-create a summary of all entries per colours, with neat headings in
-between. We are going to perform this two ways: first without using
-function, and then using functions. Macros have already been written and
-allocated to buttons that will enable this. Execute the ‘Run without
-functions’ to get an idea of what is trying to be achieved. Inspect the
-syntax of the function method and obtain an understanding of its
-workings. You might note that using functions does not decrease the time
-it takes to execute the macro, and nor does it really lead to less lines
-of code being written. So what are the benefits of using functions
-here?</p>
-<ul>
-<li>A certain action is only written once inside the function, thereby
-decreasing the likelihood of coding errors when repeating code
-throughout the macro.</li>
-<li>It is easier to read</li>
-<li>When coding, it is easier to pass new data to existing functions,
-rather than needing to apply computational thinking again in rewriting
-code.</li>
-</ul>
-</div>
-</div>
-<div id="exercises-solutions" class="section level1">
-<h1>Exercises Solutions</h1>
-<div id="chapter-1" class="section level3">
-<h3><u>Chapter 1</u></h3>
-<p>Using “range”:</p>
-<div class="sourceCode" id="cb63"><pre
-class="sourceCode vb"><code class="sourceCode monobasic"><span id="cb63-1"><a href="#cb63-1" aria-hidden="true" tabindex="-1"></a>Range(<span class="st">&quot;B1&quot;</span>).Value = <span class="st">&quot;Roger&quot;</span></span>
-<span id="cb63-2"><a href="#cb63-2" aria-hidden="true" tabindex="-1"></a>Range(<span class="st">&quot;B2&quot;</span>).Value = <span class="st">&quot;Federer&quot;</span></span>
-<span id="cb63-3"><a href="#cb63-3" aria-hidden="true" tabindex="-1"></a>Range(<span class="st">&quot;B3&quot;</span>).Value = 1981</span>
-<span id="cb63-4"><a href="#cb63-4" aria-hidden="true" tabindex="-1"></a>Range(<span class="st">&quot;B4&quot;</span>).Value = 40</span>
-<span id="cb63-5"><a href="#cb63-5" aria-hidden="true" tabindex="-1"></a>Range(<span class="st">&quot;B6&quot;</span>).Value = Range(<span class="st">&quot;B3&quot;</span>).Value + Range(<span class="st">&quot;B4&quot;</span>).Value</span>
-<span id="cb63-6"><a href="#cb63-6" aria-hidden="true" tabindex="-1"></a>Range(<span class="st">&quot;C9:E11&quot;</span>).Value = 420</span></code></pre></div>
-<p>Using “cells”:</p>
-<div class="sourceCode" id="cb64"><pre
-class="sourceCode vb"><code class="sourceCode monobasic"><span id="cb64-1"><a href="#cb64-1" aria-hidden="true" tabindex="-1"></a>Cells(1,2).Value = <span class="st">&quot;Roger&quot;</span></span>
-<span id="cb64-2"><a href="#cb64-2" aria-hidden="true" tabindex="-1"></a>Cells(2,2).Value = <span class="st">&quot;Federer&quot;</span></span>
-<span id="cb64-3"><a href="#cb64-3" aria-hidden="true" tabindex="-1"></a>Cells(3,2).Value = 1981</span>
-<span id="cb64-4"><a href="#cb64-4" aria-hidden="true" tabindex="-1"></a>Cells(4,2).Value = 40</span>
-<span id="cb64-5"><a href="#cb64-5" aria-hidden="true" tabindex="-1"></a>Cells(6,2).Value = Cells(3,2).Value + Cells(4,2).Value</span>
-<span id="cb64-6"><a href="#cb64-6" aria-hidden="true" tabindex="-1"></a>Range(Cells(9,3),Cells(11,5)).Value = 420</span></code></pre></div>
-</div>
-<div id="chapter-2" class="section level3">
-<h3><u>Chapter 2</u></h3>
-<div class="sourceCode" id="cb65"><pre
-class="sourceCode vb"><code class="sourceCode monobasic"><span id="cb65-1"><a href="#cb65-1" aria-hidden="true" tabindex="-1"></a><span class="kw">Dim</span> nameSurname <span class="kw">As</span> <span class="dt">String</span></span>
-<span id="cb65-2"><a href="#cb65-2" aria-hidden="true" tabindex="-1"></a>nameSurname = <span class="st">&quot;Hamman Schoonwinkel&quot;</span></span>
-<span id="cb65-3"><a href="#cb65-3" aria-hidden="true" tabindex="-1"></a>Range(<span class="st">&quot;B1&quot;</span>).Value = nameSurname</span>
-<span id="cb65-4"><a href="#cb65-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb65-5"><a href="#cb65-5" aria-hidden="true" tabindex="-1"></a><span class="kw">Dim</span> yearBirth <span class="kw">As</span> <span class="dt">Integer</span></span>
-<span id="cb65-6"><a href="#cb65-6" aria-hidden="true" tabindex="-1"></a>yearBirth = 1993</span>
-<span id="cb65-7"><a href="#cb65-7" aria-hidden="true" tabindex="-1"></a>Range(<span class="st">&quot;B2&quot;</span>).Value = yearBirth</span>
-<span id="cb65-8"><a href="#cb65-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb65-9"><a href="#cb65-9" aria-hidden="true" tabindex="-1"></a><span class="kw">Dim</span> age <span class="kw">As</span> <span class="dt">Integer</span></span>
-<span id="cb65-10"><a href="#cb65-10" aria-hidden="true" tabindex="-1"></a>age = Range(<span class="st">&quot;F1&quot;</span>).Value</span>
-<span id="cb65-11"><a href="#cb65-11" aria-hidden="true" tabindex="-1"></a>Range(<span class="st">&quot;B3&quot;</span>).Value = age</span>
-<span id="cb65-12"><a href="#cb65-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb65-13"><a href="#cb65-13" aria-hidden="true" tabindex="-1"></a><span class="kw">Dim</span> idNumber <span class="kw">As</span> <span class="dt">Double</span></span>
-<span id="cb65-14"><a href="#cb65-14" aria-hidden="true" tabindex="-1"></a>idNumber = 9305266058079</span>
-<span id="cb65-15"><a href="#cb65-15" aria-hidden="true" tabindex="-1"></a>Range(<span class="st">&quot;B4&quot;</span>).Value = idNumber</span>
-<span id="cb65-16"><a href="#cb65-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb65-17"><a href="#cb65-17" aria-hidden="true" tabindex="-1"></a><span class="kw">Dim</span> currentYear <span class="kw">As</span> <span class="dt">Integer</span></span>
-<span id="cb65-18"><a href="#cb65-18" aria-hidden="true" tabindex="-1"></a>currentYear = yearBirth + age</span>
-<span id="cb65-19"><a href="#cb65-19" aria-hidden="true" tabindex="-1"></a>Range(<span class="st">&quot;B6&quot;</span>).Value = currentYear</span>
-<span id="cb65-20"><a href="#cb65-20" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb65-21"><a href="#cb65-21" aria-hidden="true" tabindex="-1"></a>age = age + 5</span>
-<span id="cb65-22"><a href="#cb65-22" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb65-23"><a href="#cb65-23" aria-hidden="true" tabindex="-1"></a>currentYear = yearBirth + age</span>
-<span id="cb65-24"><a href="#cb65-24" aria-hidden="true" tabindex="-1"></a>Range(<span class="st">&quot;B6&quot;</span>).Value = currentYear</span>
-<span id="cb65-25"><a href="#cb65-25" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb65-26"><a href="#cb65-26" aria-hidden="true" tabindex="-1"></a><span class="kw">Dim</span> i <span class="kw">As</span> <span class="dt">Integer</span></span>
-<span id="cb65-27"><a href="#cb65-27" aria-hidden="true" tabindex="-1"></a>i = Range(<span class="st">&quot;B10&quot;</span>).Value</span>
-<span id="cb65-28"><a href="#cb65-28" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb65-29"><a href="#cb65-29" aria-hidden="true" tabindex="-1"></a><span class="kw">Dim</span> j <span class="kw">As</span> <span class="dt">Integer</span></span>
-<span id="cb65-30"><a href="#cb65-30" aria-hidden="true" tabindex="-1"></a>j = Range(<span class="st">&quot;B11&quot;</span>).Value</span>
-<span id="cb65-31"><a href="#cb65-31" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb65-32"><a href="#cb65-32" aria-hidden="true" tabindex="-1"></a>Cells(i, j).Value = <span class="st">&quot;Federer&quot;</span></span></code></pre></div>
-</div>
-<div id="chapter-3" class="section level3">
-<h3><u>Chapter 3</u></h3>
-<div class="sourceCode" id="cb66"><pre
-class="sourceCode vb"><code class="sourceCode monobasic"><span id="cb66-1"><a href="#cb66-1" aria-hidden="true" tabindex="-1"></a><span class="co">&#39;Question 1</span></span>
-<span id="cb66-2"><a href="#cb66-2" aria-hidden="true" tabindex="-1"></a><span class="kw">If </span>Range(<span class="st">&quot;C1&quot;</span>).Value &gt; 37.5 <span class="kw">Then</span></span>
-<span id="cb66-3"><a href="#cb66-3" aria-hidden="true" tabindex="-1"></a>    Range (<span class="st">&quot;C2&quot;</span>).Value = <span class="st">&quot;Covid warning&quot;</span></span>
-<span id="cb66-4"><a href="#cb66-4" aria-hidden="true" tabindex="-1"></a><span class="kw">End If</span></span>
-<span id="cb66-5"><a href="#cb66-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb66-6"><a href="#cb66-6" aria-hidden="true" tabindex="-1"></a><span class="co">&#39;Question 2</span></span>
-<span id="cb66-7"><a href="#cb66-7" aria-hidden="true" tabindex="-1"></a><span class="kw">If </span>Range(<span class="st">&quot;C4&quot;</span>).Value &gt;=18 <span class="kw">Then</span></span>
-<span id="cb66-8"><a href="#cb66-8" aria-hidden="true" tabindex="-1"></a>    Range(<span class="st">&quot;C5&quot;</span>).Value = <span class="st">&quot;You may enter&quot;</span></span>
-<span id="cb66-9"><a href="#cb66-9" aria-hidden="true" tabindex="-1"></a><span class="kw">Else</span></span>
-<span id="cb66-10"><a href="#cb66-10" aria-hidden="true" tabindex="-1"></a>    Range(<span class="st">&quot;C5&quot;</span>).Value = <span class="st">&quot;You may not enter&quot;</span></span>
-<span id="cb66-11"><a href="#cb66-11" aria-hidden="true" tabindex="-1"></a><span class="kw">End If</span></span>
-<span id="cb66-12"><a href="#cb66-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb66-13"><a href="#cb66-13" aria-hidden="true" tabindex="-1"></a><span class="co">&#39;Question 3</span></span>
-<span id="cb66-14"><a href="#cb66-14" aria-hidden="true" tabindex="-1"></a><span class="kw">If </span>Range(<span class="st">&quot;C7&quot;</span>).Value &gt;= 40 <span class="kw">And</span> Range(<span class="st">&quot;C8&quot;</span>).Value &gt;= 80 <span class="kw">Then</span></span>
-<span id="cb66-15"><a href="#cb66-15" aria-hidden="true" tabindex="-1"></a>    Range(<span class="st">&quot;C9&quot;</span>).Value = <span class="st">&quot;Yes&quot;</span></span>
-<span id="cb66-16"><a href="#cb66-16" aria-hidden="true" tabindex="-1"></a><span class="kw">Else</span></span>
-<span id="cb66-17"><a href="#cb66-17" aria-hidden="true" tabindex="-1"></a>    Range(<span class="st">&quot;C9&quot;</span>).Value = <span class="st">&quot;No&quot;</span></span>
-<span id="cb66-18"><a href="#cb66-18" aria-hidden="true" tabindex="-1"></a><span class="kw">End If</span></span>
-<span id="cb66-19"><a href="#cb66-19" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb66-20"><a href="#cb66-20" aria-hidden="true" tabindex="-1"></a><span class="co">&#39;Question 4</span></span>
-<span id="cb66-21"><a href="#cb66-21" aria-hidden="true" tabindex="-1"></a><span class="kw">If </span>Range(<span class="st">&quot;C11&quot;</span>).Value &lt;= 30 <span class="kw">Or</span> Range(<span class="st">&quot;C12&quot;</span>).Value &lt;= 50 <span class="kw">Then</span></span>
-<span id="cb66-22"><a href="#cb66-22" aria-hidden="true" tabindex="-1"></a>    Range(<span class="st">&quot;C13&quot;</span>).Value = <span class="st">&quot;Yes&quot;</span></span>
-<span id="cb66-23"><a href="#cb66-23" aria-hidden="true" tabindex="-1"></a><span class="kw">Else</span></span>
-<span id="cb66-24"><a href="#cb66-24" aria-hidden="true" tabindex="-1"></a>    Range(<span class="st">&quot;C13&quot;</span>).Value = <span class="st">&quot;No&quot;</span></span>
-<span id="cb66-25"><a href="#cb66-25" aria-hidden="true" tabindex="-1"></a><span class="kw">End If</span></span></code></pre></div>
-</div>
-<div id="chapter-4" class="section level3">
-<h3><u>Chapter 4</u></h3>
-<div class="sourceCode" id="cb67"><pre
-class="sourceCode vb"><code class="sourceCode monobasic"><span id="cb67-1"><a href="#cb67-1" aria-hidden="true" tabindex="-1"></a>Range(<span class="st">&quot;A4&quot;</span>).Copy Range(<span class="st">&quot;C6&quot;</span>)</span>
-<span id="cb67-2"><a href="#cb67-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb67-3"><a href="#cb67-3" aria-hidden="true" tabindex="-1"></a>Range(<span class="st">&quot;A12:B15&quot;</span>).Copy Range(<span class="st">&quot;E15&quot;</span>) <span class="co">&#39;or Range(&quot;A12&quot;).CurrentRegion.Copy Range(&quot;E15&quot;)</span></span></code></pre></div>
-</div>
-<div id="chapter-5" class="section level3">
-<h3><u>Chapter 5</u></h3>
-<div class="sourceCode" id="cb68"><pre
-class="sourceCode vb"><code class="sourceCode monobasic"><span id="cb68-1"><a href="#cb68-1" aria-hidden="true" tabindex="-1"></a><span class="kw">Dim</span> lastrow <span class="kw">as</span> <span class="dt">Integer</span></span>
-<span id="cb68-2"><a href="#cb68-2" aria-hidden="true" tabindex="-1"></a>lastrow = cells(rows.count,1).End(xlUp).row</span>
-<span id="cb68-3"><a href="#cb68-3" aria-hidden="true" tabindex="-1"></a>Range(<span class="st">&quot;G1&quot;</span>).Value = lastrow</span></code></pre></div>
-</div>
-<div id="chapter-6" class="section level3">
-<h3><u>Chapter 6</u></h3>
-<div class="sourceCode" id="cb69"><pre
-class="sourceCode vb"><code class="sourceCode monobasic"><span id="cb69-1"><a href="#cb69-1" aria-hidden="true" tabindex="-1"></a><span class="kw">Dim</span> name <span class="kw">as</span> <span class="dt">String</span></span>
-<span id="cb69-2"><a href="#cb69-2" aria-hidden="true" tabindex="-1"></a><span class="kw">Dim</span> yearOfBirth <span class="kw">as</span> <span class="dt">Integer</span></span>
-<span id="cb69-3"><a href="#cb69-3" aria-hidden="true" tabindex="-1"></a><span class="kw">Dim</span> age <span class="kw">as</span> <span class="dt">Integer</span></span>
-<span id="cb69-4"><a href="#cb69-4" aria-hidden="true" tabindex="-1"></a><span class="kw">Dim</span> addEntryRow <span class="kw">as</span> <span class="dt">Integer</span></span>
-<span id="cb69-5"><a href="#cb69-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb69-6"><a href="#cb69-6" aria-hidden="true" tabindex="-1"></a>addEntryRow = cells(rows.count,1).End(xlUp).row + 1</span>
-<span id="cb69-7"><a href="#cb69-7" aria-hidden="true" tabindex="-1"></a>name = InputBox(<span class="st">&quot;Please enter your name:&quot;</span>)</span>
-<span id="cb69-8"><a href="#cb69-8" aria-hidden="true" tabindex="-1"></a>yearOfBirth = InputBox(<span class="st">&quot;Please enter your year of birth:&quot;</span>)</span>
-<span id="cb69-9"><a href="#cb69-9" aria-hidden="true" tabindex="-1"></a>age = 2022 - yearOfBirth</span>
-<span id="cb69-10"><a href="#cb69-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb69-11"><a href="#cb69-11" aria-hidden="true" tabindex="-1"></a>addEntryRow = cells(rows.count,1).End(xlUp).row + 1</span>
-<span id="cb69-12"><a href="#cb69-12" aria-hidden="true" tabindex="-1"></a>cells(addEntryRow,1).Value = name</span>
-<span id="cb69-13"><a href="#cb69-13" aria-hidden="true" tabindex="-1"></a>cells(addEntryRow,2).Value = yearOfBirth</span>
-<span id="cb69-14"><a href="#cb69-14" aria-hidden="true" tabindex="-1"></a>cells(addEntryRow,3).Value = age</span>
-<span id="cb69-15"><a href="#cb69-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb69-16"><a href="#cb69-16" aria-hidden="true" tabindex="-1"></a>MsgBox <span class="st">&quot;Entry added succesfully&quot;</span></span></code></pre></div>
-</div>
-<div id="chapter-7" class="section level3">
-<h3><u>Chapter 7</u></h3>
-</div>
-<div id="part-i-1" class="section level3">
-<h3>Part I</h3>
-<div class="sourceCode" id="cb70"><pre
-class="sourceCode vb"><code class="sourceCode monobasic"><span id="cb70-1"><a href="#cb70-1" aria-hidden="true" tabindex="-1"></a><span class="kw">Dim</span> cityWs <span class="kw">as</span> Worksheet</span>
-<span id="cb70-2"><a href="#cb70-2" aria-hidden="true" tabindex="-1"></a><span class="kw">Dim</span> unitedWs <span class="kw">as</span> Worksheet</span>
-<span id="cb70-3"><a href="#cb70-3" aria-hidden="true" tabindex="-1"></a><span class="kw">Dim</span> combinedWs <span class="kw">as</span> Worksheet</span>
-<span id="cb70-4"><a href="#cb70-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb70-5"><a href="#cb70-5" aria-hidden="true" tabindex="-1"></a><span class="kw">Set </span>cityWs = Worksheets(<span class="st">&quot;Manchester City&quot;</span>)</span>
-<span id="cb70-6"><a href="#cb70-6" aria-hidden="true" tabindex="-1"></a><span class="kw">Set </span>unitedWs = Worksheets(<span class="st">&quot;Manchester United&quot;</span>)</span>
-<span id="cb70-7"><a href="#cb70-7" aria-hidden="true" tabindex="-1"></a><span class="kw">Set </span>combinedWs = Worksheets(<span class="st">&quot;All Manchester&quot;</span>)</span>
-<span id="cb70-8"><a href="#cb70-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb70-9"><a href="#cb70-9" aria-hidden="true" tabindex="-1"></a><span class="co">&#39;Determine city range and copy and paste over to combined sheet:</span></span>
-<span id="cb70-10"><a href="#cb70-10" aria-hidden="true" tabindex="-1"></a><span class="kw">Dim</span> lastrowCity <span class="kw">as</span> <span class="dt">Integer</span></span>
-<span id="cb70-11"><a href="#cb70-11" aria-hidden="true" tabindex="-1"></a>lastrowCity = cityWs.cells(rows.count,1).End(xlUp).row</span>
-<span id="cb70-12"><a href="#cb70-12" aria-hidden="true" tabindex="-1"></a>cityWs.Range(cityWs.Cells(2,1),cityWs.Cells(lastrowCity,5)).Copy combinedWs.Range(<span class="st">&quot;A2&quot;</span>)</span>
-<span id="cb70-13"><a href="#cb70-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb70-14"><a href="#cb70-14" aria-hidden="true" tabindex="-1"></a><span class="co">&#39;Determine united range and copy and paste over to combined sheet:</span></span>
-<span id="cb70-15"><a href="#cb70-15" aria-hidden="true" tabindex="-1"></a><span class="kw">Dim</span> lastrowUnited <span class="kw">as</span> <span class="dt">Integer</span></span>
-<span id="cb70-16"><a href="#cb70-16" aria-hidden="true" tabindex="-1"></a>lastrowUnited = unitedWs.cells(rows.count,1).End(xlUp).row</span>
-<span id="cb70-17"><a href="#cb70-17" aria-hidden="true" tabindex="-1"></a><span class="kw">Dim</span> startPaste <span class="kw">as</span> <span class="dt">Integer</span></span>
-<span id="cb70-18"><a href="#cb70-18" aria-hidden="true" tabindex="-1"></a>startPaste = combinedWs.cells(rows.count,1).End(xlUp).row + 1</span>
-<span id="cb70-19"><a href="#cb70-19" aria-hidden="true" tabindex="-1"></a>unitedWs.Range(unitedWs.Cells(2,1),unitedWs.Cells(lastrowUnited,5)).Copy combinedWs.Cells(startPaste,1)</span></code></pre></div>
-</div>
-<div id="part-ii-1" class="section level3">
-<h3>Part II</h3>
-<p>First macro:</p>
-<div class="sourceCode" id="cb71"><pre
-class="sourceCode vb"><code class="sourceCode monobasic"><span id="cb71-1"><a href="#cb71-1" aria-hidden="true" tabindex="-1"></a><span class="co">&#39;This code was just copied as provided in Chapter 6</span></span>
-<span id="cb71-2"><a href="#cb71-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb71-3"><a href="#cb71-3" aria-hidden="true" tabindex="-1"></a><span class="kw">Dim</span> fnameList, fnameCurFile <span class="kw">As</span> Variant</span>
-<span id="cb71-4"><a href="#cb71-4" aria-hidden="true" tabindex="-1"></a><span class="kw">Dim</span> countFiles, countSheets <span class="kw">As</span> <span class="dt">Integer</span></span>
-<span id="cb71-5"><a href="#cb71-5" aria-hidden="true" tabindex="-1"></a><span class="kw">Dim</span> wksCurSheet <span class="kw">As</span> Worksheet</span>
-<span id="cb71-6"><a href="#cb71-6" aria-hidden="true" tabindex="-1"></a><span class="kw">Dim</span> wbkCurBook, wbkSrcBook <span class="kw">As</span> Workbook</span>
-<span id="cb71-7"><a href="#cb71-7" aria-hidden="true" tabindex="-1"></a> </span>
-<span id="cb71-8"><a href="#cb71-8" aria-hidden="true" tabindex="-1"></a>fnameList = Application.GetOpenFilename(FileFilter:=<span class="st">&quot;Microsoft Excel Workbooks (*.xls;*.xlsx;*.xlsm),*.xls;*.xlsx;*.xlsm&quot;</span>, Title:=<span class="st">&quot;Choose Excel files to merge&quot;</span>, MultiSelect:=<span class="kw">True</span>)</span>
-<span id="cb71-9"><a href="#cb71-9" aria-hidden="true" tabindex="-1"></a> </span>
-<span id="cb71-10"><a href="#cb71-10" aria-hidden="true" tabindex="-1"></a><span class="kw">If </span>(vbBoolean &lt;&gt; VarType(fnameList)) <span class="kw">Then</span></span>
-<span id="cb71-11"><a href="#cb71-11" aria-hidden="true" tabindex="-1"></a>    <span class="kw">If </span>(UBound(fnameList) &gt; 0) <span class="kw">Then</span></span>
-<span id="cb71-12"><a href="#cb71-12" aria-hidden="true" tabindex="-1"></a>        countFiles = 0</span>
-<span id="cb71-13"><a href="#cb71-13" aria-hidden="true" tabindex="-1"></a>        countSheets = 0</span>
-<span id="cb71-14"><a href="#cb71-14" aria-hidden="true" tabindex="-1"></a>        </span>
-<span id="cb71-15"><a href="#cb71-15" aria-hidden="true" tabindex="-1"></a>        Application.ScreenUpdating = <span class="kw">False</span></span>
-<span id="cb71-16"><a href="#cb71-16" aria-hidden="true" tabindex="-1"></a>        Application.Calculation = xlCalculationManual</span>
-<span id="cb71-17"><a href="#cb71-17" aria-hidden="true" tabindex="-1"></a>        <span class="kw">Set </span>wbkCurBook = ActiveWorkbook</span>
-<span id="cb71-18"><a href="#cb71-18" aria-hidden="true" tabindex="-1"></a>            </span>
-<span id="cb71-19"><a href="#cb71-19" aria-hidden="true" tabindex="-1"></a>        <span class="kw">For </span>Each fnameCurFile In fnameList</span>
-<span id="cb71-20"><a href="#cb71-20" aria-hidden="true" tabindex="-1"></a>            countFiles = countFiles + 1</span>
-<span id="cb71-21"><a href="#cb71-21" aria-hidden="true" tabindex="-1"></a>            <span class="kw">Set </span>wbkSrcBook = Workbooks.Open(Filename:=fnameCurFile)</span>
-<span id="cb71-22"><a href="#cb71-22" aria-hidden="true" tabindex="-1"></a>            <span class="kw">For </span>Each wksCurSheet In wbkSrcBook.Sheets</span>
-<span id="cb71-23"><a href="#cb71-23" aria-hidden="true" tabindex="-1"></a>                countSheets = countSheets + 1</span>
-<span id="cb71-24"><a href="#cb71-24" aria-hidden="true" tabindex="-1"></a>                wksCurSheet.Copy after:=wbkCurBook.Sheets(wbkCurBook.Sheets.Count)</span>
-<span id="cb71-25"><a href="#cb71-25" aria-hidden="true" tabindex="-1"></a>            <span class="kw">Next</span></span>
-<span id="cb71-26"><a href="#cb71-26" aria-hidden="true" tabindex="-1"></a>            wbkSrcBook.Close SaveChanges:=<span class="kw">False</span></span>
-<span id="cb71-27"><a href="#cb71-27" aria-hidden="true" tabindex="-1"></a>        <span class="kw">Next</span></span>
-<span id="cb71-28"><a href="#cb71-28" aria-hidden="true" tabindex="-1"></a> </span>
-<span id="cb71-29"><a href="#cb71-29" aria-hidden="true" tabindex="-1"></a>        Application.ScreenUpdating = <span class="kw">True</span></span>
-<span id="cb71-30"><a href="#cb71-30" aria-hidden="true" tabindex="-1"></a>        Application.Calculation = xlCalculationAutomatic</span>
-<span id="cb71-31"><a href="#cb71-31" aria-hidden="true" tabindex="-1"></a> </span>
-<span id="cb71-32"><a href="#cb71-32" aria-hidden="true" tabindex="-1"></a>         MsgBox <span class="st">&quot;Processed &quot;</span> &amp; countFiles &amp; <span class="st">&quot; files&quot;</span> &amp; vbCrLf &amp; <span class="st">&quot;Merged &quot;</span> &amp; countSheets &amp; <span class="st">&quot;             worksheets&quot;</span>, Title:=<span class="st">&quot;Merge Excel files&quot;</span></span>
-<span id="cb71-33"><a href="#cb71-33" aria-hidden="true" tabindex="-1"></a>    <span class="kw">End If</span></span>
-<span id="cb71-34"><a href="#cb71-34" aria-hidden="true" tabindex="-1"></a><span class="kw">Else</span></span>
-<span id="cb71-35"><a href="#cb71-35" aria-hidden="true" tabindex="-1"></a>    MsgBox <span class="st">&quot;No files selected&quot;</span>, Title:=<span class="st">&quot;Merge Excel files&quot;</span></span>
-<span id="cb71-36"><a href="#cb71-36" aria-hidden="true" tabindex="-1"></a><span class="kw">End If</span></span></code></pre></div>
-<p>Second macro:</p>
-<p>At this stage we now have one workbook containing three worksheets.
-Note that the sheets imported appear at the end. As worksheets are added
-to the workbook, it starts at the right. So first it imported the August
-sheet (depending on which one you clicked first, probably August if your
-files are sorted alphabetically) and added it to the right. Then it
-imported the July sheet and added it to the right, thereby making August
-now the middle sheet. Also note that these new sheets are not titled by
-their original workbook name. We will therefore have to refer to them by
-reference to their order, rather than their name, as we would not know
-their new name before importing.</p>
-<div class="sourceCode" id="cb72"><pre
-class="sourceCode vb"><code class="sourceCode monobasic"><span id="cb72-1"><a href="#cb72-1" aria-hidden="true" tabindex="-1"></a><span class="kw">Dim</span> julyWs <span class="kw">As</span> Worksheet</span>
-<span id="cb72-2"><a href="#cb72-2" aria-hidden="true" tabindex="-1"></a><span class="kw">Dim</span> augustWs <span class="kw">As</span> Worksheet</span>
-<span id="cb72-3"><a href="#cb72-3" aria-hidden="true" tabindex="-1"></a><span class="kw">Dim</span> combinedWs <span class="kw">As</span> Worksheet</span>
-<span id="cb72-4"><a href="#cb72-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb72-5"><a href="#cb72-5" aria-hidden="true" tabindex="-1"></a><span class="co">&#39;Now reference sheets by order!</span></span>
-<span id="cb72-6"><a href="#cb72-6" aria-hidden="true" tabindex="-1"></a><span class="kw">Set </span>julyWs = Worksheets(3)</span>
-<span id="cb72-7"><a href="#cb72-7" aria-hidden="true" tabindex="-1"></a><span class="kw">Set </span>augustWs = Worksheets(2)</span>
-<span id="cb72-8"><a href="#cb72-8" aria-hidden="true" tabindex="-1"></a><span class="kw">Set </span>combinedWs = Worksheets(1)</span>
-<span id="cb72-9"><a href="#cb72-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb72-10"><a href="#cb72-10" aria-hidden="true" tabindex="-1"></a><span class="co">&#39;Determine July range and copy and paste over to combined sheet:</span></span>
-<span id="cb72-11"><a href="#cb72-11" aria-hidden="true" tabindex="-1"></a><span class="kw">Dim</span> lastrowJuly <span class="kw">As</span> <span class="dt">Integer</span></span>
-<span id="cb72-12"><a href="#cb72-12" aria-hidden="true" tabindex="-1"></a>lastrowJuly = julyWs.Cells(Rows.Count, 1).End(xlUp).Row</span>
-<span id="cb72-13"><a href="#cb72-13" aria-hidden="true" tabindex="-1"></a>julyWs.Range(julyWs.Cells(2, 1), julyWs.Cells(lastrowJuly, 6)).Copy combinedWs.Range(<span class="st">&quot;A2&quot;</span>)</span>
-<span id="cb72-14"><a href="#cb72-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb72-15"><a href="#cb72-15" aria-hidden="true" tabindex="-1"></a><span class="co">&#39;Determine August range and copy and paste over to combined sheet:</span></span>
-<span id="cb72-16"><a href="#cb72-16" aria-hidden="true" tabindex="-1"></a><span class="kw">Dim</span> lastrowAugust <span class="kw">As</span> <span class="dt">Integer</span></span>
-<span id="cb72-17"><a href="#cb72-17" aria-hidden="true" tabindex="-1"></a>lastrowAugust = augustWs.Cells(Rows.Count, 1).End(xlUp).Row</span>
-<span id="cb72-18"><a href="#cb72-18" aria-hidden="true" tabindex="-1"></a><span class="kw">Dim</span> startPaste <span class="kw">As</span> <span class="dt">Integer</span></span>
-<span id="cb72-19"><a href="#cb72-19" aria-hidden="true" tabindex="-1"></a>startPaste = combinedWs.Cells(Rows.Count, 1).End(xlUp).Row + 1</span>
-<span id="cb72-20"><a href="#cb72-20" aria-hidden="true" tabindex="-1"></a>augustWs.Range(augustWs.Cells(2, 1), augustWs.Cells(lastrowAugust, 6)).Copy combinedWs.Cells(startPaste, 1)</span></code></pre></div>
-</div>
-<div id="chapter-8" class="section level3">
-<h3><u>Chapter 8</u></h3>
-</div>
-<div id="part-i-2" class="section level3">
-<h3>Part I</h3>
-<div class="sourceCode" id="cb73"><pre
-class="sourceCode vb"><code class="sourceCode monobasic"><span id="cb73-1"><a href="#cb73-1" aria-hidden="true" tabindex="-1"></a><span class="kw">Dim</span> i <span class="kw">As</span> <span class="dt">Integer</span></span>
-<span id="cb73-2"><a href="#cb73-2" aria-hidden="true" tabindex="-1"></a><span class="kw">Dim</span> lastRow <span class="kw">As</span> <span class="dt">Integer</span></span>
-<span id="cb73-3"><a href="#cb73-3" aria-hidden="true" tabindex="-1"></a><span class="kw">Dim</span> startPaste <span class="kw">As</span> <span class="dt">Integer</span></span>
-<span id="cb73-4"><a href="#cb73-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb73-5"><a href="#cb73-5" aria-hidden="true" tabindex="-1"></a><span class="kw">For </span>i = 2 <span class="kw">To</span> 7</span>
-<span id="cb73-6"><a href="#cb73-6" aria-hidden="true" tabindex="-1"></a>    lastRow = Worksheets(i).Cells(Rows.Count, 1).End(xlUp).Row</span>
-<span id="cb73-7"><a href="#cb73-7" aria-hidden="true" tabindex="-1"></a>    startPaste = Worksheets(1).Cells(Rows.Count, 1).End(xlUp).Row + 1</span>
-<span id="cb73-8"><a href="#cb73-8" aria-hidden="true" tabindex="-1"></a>    Worksheets(i).Range(Worksheets(i).Cells(2, 1), Worksheets(i).Cells(lastRow, 3)).Copy Worksheets(1).Cells(startPaste, 1)</span>
-<span id="cb73-9"><a href="#cb73-9" aria-hidden="true" tabindex="-1"></a><span class="kw">Next </span>i</span></code></pre></div>
-</div>
-<div id="part-ii-2" class="section level3">
-<h3>Part II</h3>
-<p>First import separate workbooks into the one workbook as separate
-worksheets:</p>
-<div class="sourceCode" id="cb74"><pre
-class="sourceCode vb"><code class="sourceCode monobasic"><span id="cb74-1"><a href="#cb74-1" aria-hidden="true" tabindex="-1"></a>Refer <span class="kw">to</span> template code in Chapter 6</span></code></pre></div>
-<p>Then rename each sheet to its respective colour:</p>
-<div class="sourceCode" id="cb75"><pre
-class="sourceCode vb"><code class="sourceCode monobasic"><span id="cb75-1"><a href="#cb75-1" aria-hidden="true" tabindex="-1"></a><span class="kw">Dim</span> i <span class="kw">as</span> <span class="dt">integer</span></span>
-<span id="cb75-2"><a href="#cb75-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb75-3"><a href="#cb75-3" aria-hidden="true" tabindex="-1"></a><span class="kw">For </span>i = 2 <span class="kw">to</span> 7</span>
-<span id="cb75-4"><a href="#cb75-4" aria-hidden="true" tabindex="-1"></a>    Worksheets(i).Name = Worksheets(i).Range(<span class="st">&quot;B2&quot;</span>).Value</span>
-<span id="cb75-5"><a href="#cb75-5" aria-hidden="true" tabindex="-1"></a><span class="kw">Next </span>i</span></code></pre></div>
-<p>Then merge separate datasets into one dataset:</p>
-<div class="sourceCode" id="cb76"><pre
-class="sourceCode vb"><code class="sourceCode monobasic"><span id="cb76-1"><a href="#cb76-1" aria-hidden="true" tabindex="-1"></a><span class="kw">Dim</span> j <span class="kw">As</span> <span class="dt">Integer</span></span>
-<span id="cb76-2"><a href="#cb76-2" aria-hidden="true" tabindex="-1"></a><span class="kw">Dim</span> lastRow <span class="kw">As</span> <span class="dt">Integer</span></span>
-<span id="cb76-3"><a href="#cb76-3" aria-hidden="true" tabindex="-1"></a><span class="kw">Dim</span> startPaste <span class="kw">As</span> <span class="dt">Integer</span></span>
-<span id="cb76-4"><a href="#cb76-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb76-5"><a href="#cb76-5" aria-hidden="true" tabindex="-1"></a><span class="kw">For </span>i = 2 <span class="kw">To</span> 7</span>
-<span id="cb76-6"><a href="#cb76-6" aria-hidden="true" tabindex="-1"></a>    lastRow = Worksheets(i).Cells(Rows.Count, 1).End(xlUp).Row</span>
-<span id="cb76-7"><a href="#cb76-7" aria-hidden="true" tabindex="-1"></a>    startPaste = Worksheets(1).Cells(Rows.Count, 1).End(xlUp).Row + 1</span>
-<span id="cb76-8"><a href="#cb76-8" aria-hidden="true" tabindex="-1"></a>    Worksheets(i).Range(Worksheets(i).Cells(2, 1),  Worksheets(i).Cells(lastRow, 3)).Copy Worksheets(1).Cells(startPaste, 1)</span>
-<span id="cb76-9"><a href="#cb76-9" aria-hidden="true" tabindex="-1"></a><span class="kw">Next </span>i</span></code></pre></div>
-</div>
-<div id="part-iii" class="section level3">
-<h3>Part III</h3>
-<div class="sourceCode" id="cb77"><pre
-class="sourceCode vb"><code class="sourceCode monobasic"><span id="cb77-1"><a href="#cb77-1" aria-hidden="true" tabindex="-1"></a><span class="kw">Dim</span> i <span class="kw">As</span> <span class="dt">Integer</span> <span class="co">&#39;will be used to loop through entries</span></span>
-<span id="cb77-2"><a href="#cb77-2" aria-hidden="true" tabindex="-1"></a><span class="kw">Dim</span> j <span class="kw">As</span> <span class="dt">Integer</span> <span class="co">&#39;will be used to loop through worksheets</span></span>
-<span id="cb77-3"><a href="#cb77-3" aria-hidden="true" tabindex="-1"></a><span class="kw">Dim</span> lastRow <span class="kw">As</span> <span class="dt">Integer</span></span>
-<span id="cb77-4"><a href="#cb77-4" aria-hidden="true" tabindex="-1"></a><span class="kw">Dim</span> startPaste <span class="kw">As</span> <span class="dt">Integer</span></span>
-<span id="cb77-5"><a href="#cb77-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb77-6"><a href="#cb77-6" aria-hidden="true" tabindex="-1"></a>lastRow = Worksheets(1).Cells(Rows.Count, 1).End(xlUp).Row</span>
-<span id="cb77-7"><a href="#cb77-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb77-8"><a href="#cb77-8" aria-hidden="true" tabindex="-1"></a><span class="co">&#39;Loop through each entry in merged dataset</span></span>
-<span id="cb77-9"><a href="#cb77-9" aria-hidden="true" tabindex="-1"></a><span class="kw">For </span>i = 2 <span class="kw">To</span> lastRow</span>
-<span id="cb77-10"><a href="#cb77-10" aria-hidden="true" tabindex="-1"></a>    <span class="co">&#39;Loop through each worksheet and find the colour</span></span>
-<span id="cb77-11"><a href="#cb77-11" aria-hidden="true" tabindex="-1"></a>    <span class="kw">For </span>j = 2 <span class="kw">To</span> 7</span>
-<span id="cb77-12"><a href="#cb77-12" aria-hidden="true" tabindex="-1"></a>        <span class="kw">If </span>Worksheets(j).Name = Worksheets(1).Cells(i, 2).Value <span class="kw">Then</span></span>
-<span id="cb77-13"><a href="#cb77-13" aria-hidden="true" tabindex="-1"></a>            startPaste = Worksheets(j).Cells(Rows.Count, 1).End(xlUp).Row + 1</span>
-<span id="cb77-14"><a href="#cb77-14" aria-hidden="true" tabindex="-1"></a>            Worksheets(1).Range(Worksheets(1).Cells(i, 1), Worksheets(1).Cells(i, 3)).Copy Worksheets(j).Cells(startPaste, 1)</span>
-<span id="cb77-15"><a href="#cb77-15" aria-hidden="true" tabindex="-1"></a>        <span class="kw">End If</span></span>
-<span id="cb77-16"><a href="#cb77-16" aria-hidden="true" tabindex="-1"></a>    <span class="kw">Next </span>j</span>
-<span id="cb77-17"><a href="#cb77-17" aria-hidden="true" tabindex="-1"></a><span class="kw">Next </span>i</span>
-<span id="cb77-18"><a href="#cb77-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb77-19"><a href="#cb77-19" aria-hidden="true" tabindex="-1"></a>MsgBox <span class="st">&quot;Extract performed succesfully&quot;</span></span></code></pre></div>
-</div>
-<div id="part-iv" class="section level3">
-<h3>Part IV</h3>
-<div class="sourceCode" id="cb78"><pre
-class="sourceCode vb"><code class="sourceCode monobasic"><span id="cb78-1"><a href="#cb78-1" aria-hidden="true" tabindex="-1"></a><span class="kw">Dim</span> lastRow <span class="kw">As</span> <span class="dt">Integer</span></span>
-<span id="cb78-2"><a href="#cb78-2" aria-hidden="true" tabindex="-1"></a><span class="kw">Dim</span> startPaste <span class="kw">As</span> <span class="dt">Integer</span></span>
-<span id="cb78-3"><a href="#cb78-3" aria-hidden="true" tabindex="-1"></a><span class="kw">Dim</span> i <span class="kw">As</span> <span class="dt">Integer</span></span>
-<span id="cb78-4"><a href="#cb78-4" aria-hidden="true" tabindex="-1"></a><span class="kw">Dim</span> messWs <span class="kw">As</span> Worksheet</span>
-<span id="cb78-5"><a href="#cb78-5" aria-hidden="true" tabindex="-1"></a><span class="kw">Dim</span> tidyWs <span class="kw">As</span> Worksheet</span>
-<span id="cb78-6"><a href="#cb78-6" aria-hidden="true" tabindex="-1"></a><span class="kw">Dim</span> colour <span class="kw">As</span> <span class="dt">String</span></span>
-<span id="cb78-7"><a href="#cb78-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb78-8"><a href="#cb78-8" aria-hidden="true" tabindex="-1"></a><span class="kw">Set </span>messWs = Worksheets(<span class="st">&quot;SemiStructured&quot;</span>)</span>
-<span id="cb78-9"><a href="#cb78-9" aria-hidden="true" tabindex="-1"></a><span class="kw">Set </span>tidyWs = Worksheets(<span class="st">&quot;Structured&quot;</span>)</span>
-<span id="cb78-10"><a href="#cb78-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb78-11"><a href="#cb78-11" aria-hidden="true" tabindex="-1"></a>lastRow = messWs.Cells(Rows.Count, 1).End(xlUp).Row</span>
-<span id="cb78-12"><a href="#cb78-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb78-13"><a href="#cb78-13" aria-hidden="true" tabindex="-1"></a><span class="kw">For </span>i = 1 <span class="kw">To</span> lastRow</span>
-<span id="cb78-14"><a href="#cb78-14" aria-hidden="true" tabindex="-1"></a>    <span class="kw">If </span>messWs.Cells(i, 1).Value = <span class="st">&quot;Colour:&quot;</span> <span class="kw">Then</span></span>
-<span id="cb78-15"><a href="#cb78-15" aria-hidden="true" tabindex="-1"></a>        colour = messWs.Cells(i, 2).Value</span>
-<span id="cb78-16"><a href="#cb78-16" aria-hidden="true" tabindex="-1"></a>    ElseIf messWs.Cells(i, 1).Value = <span class="st">&quot;Date&quot;</span> <span class="kw">Then</span></span>
-<span id="cb78-17"><a href="#cb78-17" aria-hidden="true" tabindex="-1"></a>        <span class="co">&#39;do nothing</span></span>
-<span id="cb78-18"><a href="#cb78-18" aria-hidden="true" tabindex="-1"></a>    <span class="kw">Else</span></span>
-<span id="cb78-19"><a href="#cb78-19" aria-hidden="true" tabindex="-1"></a>        startPaste = tidyWs.Cells(Rows.Count, 1).End(xlUp).Row + 1</span>
-<span id="cb78-20"><a href="#cb78-20" aria-hidden="true" tabindex="-1"></a>        tidyWs.Cells(startPaste, 1).Value = messWs.Cells(i, 1).Value</span>
-<span id="cb78-21"><a href="#cb78-21" aria-hidden="true" tabindex="-1"></a>        tidyWs.Cells(startPaste, 2).Value = colour</span>
-<span id="cb78-22"><a href="#cb78-22" aria-hidden="true" tabindex="-1"></a>        tidyWs.Cells(startPaste, 3).Value = messWs.Cells(i, 2).Value</span>
-<span id="cb78-23"><a href="#cb78-23" aria-hidden="true" tabindex="-1"></a>    <span class="kw">End If</span></span>
-<span id="cb78-24"><a href="#cb78-24" aria-hidden="true" tabindex="-1"></a><span class="kw">Next </span>i</span></code></pre></div>
-</div>
-<div id="part-v" class="section level3">
-<h3>Part V</h3>
-<p>Invoice button:</p>
-<div class="sourceCode" id="cb79"><pre
-class="sourceCode vb"><code class="sourceCode monobasic"><span id="cb79-1"><a href="#cb79-1" aria-hidden="true" tabindex="-1"></a><span class="kw">Dim</span> accNumber <span class="kw">As</span> <span class="dt">Integer</span></span>
-<span id="cb79-2"><a href="#cb79-2" aria-hidden="true" tabindex="-1"></a><span class="kw">Dim</span> invoiceAmount <span class="kw">As</span> <span class="dt">Integer</span></span>
-<span id="cb79-3"><a href="#cb79-3" aria-hidden="true" tabindex="-1"></a><span class="kw">Dim</span> startPaste <span class="kw">As</span> <span class="dt">Integer</span></span>
-<span id="cb79-4"><a href="#cb79-4" aria-hidden="true" tabindex="-1"></a><span class="kw">Dim</span> i <span class="kw">As</span> <span class="dt">Integer</span></span>
-<span id="cb79-5"><a href="#cb79-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb79-6"><a href="#cb79-6" aria-hidden="true" tabindex="-1"></a><span class="co">&#39;Enter account number</span></span>
-<span id="cb79-7"><a href="#cb79-7" aria-hidden="true" tabindex="-1"></a>accNumber = InputBox(<span class="st">&quot;Enter account number:&quot;</span>)</span>
-<span id="cb79-8"><a href="#cb79-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb79-9"><a href="#cb79-9" aria-hidden="true" tabindex="-1"></a><span class="co">&#39;Enter invoice amount</span></span>
-<span id="cb79-10"><a href="#cb79-10" aria-hidden="true" tabindex="-1"></a>invoiceAmount = InputBox(<span class="st">&quot;Enter invoice amount:&quot;</span>)</span>
-<span id="cb79-11"><a href="#cb79-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb79-12"><a href="#cb79-12" aria-hidden="true" tabindex="-1"></a><span class="co">&#39;Find sheet</span></span>
-<span id="cb79-13"><a href="#cb79-13" aria-hidden="true" tabindex="-1"></a><span class="kw">For </span>i = 2 <span class="kw">To</span> 39</span>
-<span id="cb79-14"><a href="#cb79-14" aria-hidden="true" tabindex="-1"></a>    <span class="kw">If </span>Worksheets(i).Name = accNumber <span class="kw">Then</span></span>
-<span id="cb79-15"><a href="#cb79-15" aria-hidden="true" tabindex="-1"></a>        startPaste = Worksheets(i).Cells(Rows.Count, 1).End(xlUp).Row + 1</span>
-<span id="cb79-16"><a href="#cb79-16" aria-hidden="true" tabindex="-1"></a>        Worksheets(i).Cells(startPaste, 1).Value = <span class="dt">Date</span></span>
-<span id="cb79-17"><a href="#cb79-17" aria-hidden="true" tabindex="-1"></a>        Worksheets(i).Cells(startPaste, 2).Value = <span class="st">&quot;Invoice&quot;</span></span>
-<span id="cb79-18"><a href="#cb79-18" aria-hidden="true" tabindex="-1"></a>        Worksheets(i).Cells(startPaste, 3).Value = invoiceAmount</span>
-<span id="cb79-19"><a href="#cb79-19" aria-hidden="true" tabindex="-1"></a>        Worksheets(i).Cells(startPaste, 4).Value = Worksheets(i).Cells(startPaste - 1, 4).Value + Worksheets(i).Cells(startPaste, 3).Value</span>
-<span id="cb79-20"><a href="#cb79-20" aria-hidden="true" tabindex="-1"></a>        MsgBox <span class="st">&quot;Invoice succesfully added&quot;</span></span>
-<span id="cb79-21"><a href="#cb79-21" aria-hidden="true" tabindex="-1"></a>        Worksheets(i).Activate</span>
-<span id="cb79-22"><a href="#cb79-22" aria-hidden="true" tabindex="-1"></a>    <span class="kw">End If</span></span>
-<span id="cb79-23"><a href="#cb79-23" aria-hidden="true" tabindex="-1"></a><span class="kw">Next </span>i</span></code></pre></div>
-<p>Payment button:</p>
-<div class="sourceCode" id="cb80"><pre
-class="sourceCode vb"><code class="sourceCode monobasic"><span id="cb80-1"><a href="#cb80-1" aria-hidden="true" tabindex="-1"></a><span class="kw">Dim</span> accNumber <span class="kw">As</span> <span class="dt">Integer</span></span>
-<span id="cb80-2"><a href="#cb80-2" aria-hidden="true" tabindex="-1"></a><span class="kw">Dim</span> paymentAmount <span class="kw">As</span> <span class="dt">Integer</span></span>
-<span id="cb80-3"><a href="#cb80-3" aria-hidden="true" tabindex="-1"></a><span class="kw">Dim</span> startPaste <span class="kw">As</span> <span class="dt">Integer</span></span>
-<span id="cb80-4"><a href="#cb80-4" aria-hidden="true" tabindex="-1"></a><span class="kw">Dim</span> i <span class="kw">As</span> <span class="dt">Integer</span></span>
-<span id="cb80-5"><a href="#cb80-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb80-6"><a href="#cb80-6" aria-hidden="true" tabindex="-1"></a><span class="co">&#39;Enter account number</span></span>
-<span id="cb80-7"><a href="#cb80-7" aria-hidden="true" tabindex="-1"></a>accNumber = InputBox(<span class="st">&quot;Enter account number:&quot;</span>)</span>
-<span id="cb80-8"><a href="#cb80-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb80-9"><a href="#cb80-9" aria-hidden="true" tabindex="-1"></a><span class="co">&#39;Enter payment amount</span></span>
-<span id="cb80-10"><a href="#cb80-10" aria-hidden="true" tabindex="-1"></a>paymentAmount = InputBox(<span class="st">&quot;Enter payment amount: (positive)&quot;</span>)</span>
-<span id="cb80-11"><a href="#cb80-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb80-12"><a href="#cb80-12" aria-hidden="true" tabindex="-1"></a><span class="co">&#39;Find sheet</span></span>
-<span id="cb80-13"><a href="#cb80-13" aria-hidden="true" tabindex="-1"></a><span class="kw">For </span>i = 2 <span class="kw">To</span> 39</span>
-<span id="cb80-14"><a href="#cb80-14" aria-hidden="true" tabindex="-1"></a>    <span class="kw">If </span>Worksheets(i).Name = accNumber <span class="kw">Then</span></span>
-<span id="cb80-15"><a href="#cb80-15" aria-hidden="true" tabindex="-1"></a>        startPaste = Worksheets(i).Cells(Rows.Count, 1).End(xlUp).Row + 1</span>
-<span id="cb80-16"><a href="#cb80-16" aria-hidden="true" tabindex="-1"></a>        Worksheets(i).Cells(startPaste, 1).Value = <span class="dt">Date</span></span>
-<span id="cb80-17"><a href="#cb80-17" aria-hidden="true" tabindex="-1"></a>        Worksheets(i).Cells(startPaste, 2).Value = <span class="st">&quot;Payment&quot;</span></span>
-<span id="cb80-18"><a href="#cb80-18" aria-hidden="true" tabindex="-1"></a>        Worksheets(i).Cells(startPaste, 3).Value = paymentAmount * -1</span>
-<span id="cb80-19"><a href="#cb80-19" aria-hidden="true" tabindex="-1"></a>        Worksheets(i).Cells(startPaste, 4).Value = Worksheets(i).Cells(startPaste - 1, 4).Value + Worksheets(i).Cells(startPaste, 3).Value</span>
-<span id="cb80-20"><a href="#cb80-20" aria-hidden="true" tabindex="-1"></a>        MsgBox <span class="st">&quot;Payment succesfully added&quot;</span></span>
-<span id="cb80-21"><a href="#cb80-21" aria-hidden="true" tabindex="-1"></a>        Worksheets(i).Activate</span>
-<span id="cb80-22"><a href="#cb80-22" aria-hidden="true" tabindex="-1"></a>    <span class="kw">End If</span></span>
-<span id="cb80-23"><a href="#cb80-23" aria-hidden="true" tabindex="-1"></a><span class="kw">Next </span>i</span></code></pre></div>
-</div>
-<div id="chapter-9" class="section level3">
-<h3><u>Chapter 9</u></h3>
-<p>Solution already provided in the workbook</p>
-</div>
-<div id="chapter-10" class="section level3">
-<h3><u>Chapter 10</u></h3>
-<p>Solution already provided in the workbook</p>
 </div>
 </div>
 

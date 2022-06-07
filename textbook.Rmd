@@ -46,17 +46,6 @@ Range("A1").Value = "Federer"
 
 Note how you need to place a string in quotation marks, while it is not required for a number.
 
-### Chapter 1 Exercises
-
-Use the workbook provided and complete the form provided by entering your details in the provided blue areas, using VBA. Code your questions to all the below questions within one macro in the VB Editor. Rerun your macro after completing each question, to make sure your macro works correctly. Refer to the cell address by using "range". Thereafter, reperform all the below questions in a new macro, by referring to the cell addresses by using "cells".
-
-Q1: Enter your name in cell B1.
-Q2: Enter your surname in cell B2.
-Q3: Enter your year of birth in cell B3.
-Q4: Enter your age in cell B4.
-Q5: Calculate the current year in cell B6, by adding your year of birth (B3) to your age (B4).
-Q6: Assign all cells in the range C9:E11 equal to the value of 420.
-
 # Chapter 2: Variables
 
 Variables are placeholders in which values or ranges can be stored. First, the variable needs to be declared. Next, a value should be assigned to that variable. Thereafter, the variable can be used throughout the code by referring to the name of that variable, which holds the value originally assigned to it.
@@ -149,36 +138,6 @@ Range(cells(1,donut),cells(1,donut+2)).Value = 5
 
 In the 1st line, we declare a variable named "donut" as type integer. In the 2nd line, we assign "donut" equal to a value of 1. In the third line, we assign a certain range equal to the value of 5. This range is from a certain cell to another cell. The first cell is the cell with a row of 1 and a column of "donut". As donut is equal to 1, this first cell is the cell with row 1 and column 1, i.e. A1. The second cell is the cell with a row of 1 and a column of [donut+2]. As donut is equal to 1, it is a column of [1+2], therefore 3. Therefore this second cell is the cell with a row of 1 and a column of 3, i.e. C1. The range is therefore from A1 to C1. We assign this range equal to a value of 5.
 
-### Chapter 2 Exercises
-
-Use the workbook provided and complete the form provided by entering your details in the provided blue areas, using VBA within one macro. Rerun the macro after each question to test accuracy.
-
-Q1: Declare a variable named 'nameSurname'. Assign it a value equal to your name and surname. Set the value of cell B1 equal to the value of that variable.
-
-Q2: Declare a variable named 'yearBirth'. Assign it a value equal to your year of birth. Set the value of cell B2 equal to the value of that variable.
-
-Q3: Declare a variable named 'age'. Assign it a value equal to the value as found in cell F1. Set the value of cell B3 equal to the value of that variable.
-
-Q4: Create a macro button for your macro created thus far.
-
-Q5: Change the value in cell F1 to your actual age, using manual traditional Excel (no VBA).
-
-Q6: Rerun the macro created in Q3, by pressing the button created in Q4. Did the value in cell B3 change to your actual age? If not, you did not do Q3 correctly. Make sure you did not "hard code" the age into your formula by expressing it directly, but rather expressed that the age should equal whatever value is found in cell F1.
-
-Q7: Declare a variable named 'idNumber'. Assign it a value equal to your ID number. Set the value of cell B4 equal to the value that variable.
-
-Q8: Declare a variable named 'currentYear'. Assign it a value equal to the 'yearBirth' variable plus the 'age' variable. Set the value of cell B6 equal to the value of the 'cuurentYear' variable.
-
-Q9: Increment the 'age' variable with 5. Rerun the macro. Nothing will change on the sheet. The answer obtained in Q8 for cell B6 would not change, despite referencing the 'age' variable, as we only changed the value of the variable after that line of code.
-
-Q10: Set the value of 'currentYear' once again equal to the 'yearBirth' variable plus the 'age' variable again. Set the value of cell B6 equal to the value of that variable. Running the macro again should now change the value in cell B6 by incrementing it with 5, as the 'age' variable, which is used to calculate the 'currentYear' value, has incremented with 5 in the previous line of code.
-
-Q11: Declare a variable named 'i'. Set it equal to the value as found in cell B10. Then declare a variable named 'j' and set it equal to the value as found in cell B11.  Then set the value of the cell with the row of i and column j equal to the text value "Federer" (in the VB Editor).
-
-Q12: Change the values in cells B10 and B11 to any numbers of your liking, using manual traditional Excel (no VBA).
-
-Q13: Rerun the macro in which your code for Q11 was placed. In which cell did the word "Federer" now appear? Did the word "Federer" still appear in cell D17 as well, or did the contents in cell D17 disappear? Why/why not?
-
 # Chapter 3: If statement
 
 ##### If Then
@@ -243,20 +202,6 @@ End If
 
 In the above example, either of the two conditions need to be met in order for a certain action to execute. Either the value as found in cell A1 should be larger (or equal) than 50, or the value as found in cell B1 should be larger (or equal) than 50. As long as one of these conditions are met, cell C1 should be assigned the value of "Passed". Otherwise, cell C1 should be assigned the value of "Failed". In the first screenshot, both numbers are smaller than 50, and therefore cell C1 displays "Failed", as neither conditions were met. In the second screenshot, one of the conditions is met, i.e. the value as found in cell A1 is larger than 50, but not the value as found in cell B1. As the Or-function only requires one of the stated conditions to be met, the word "Passed" is displayed in Cell C1.
 
-### Chapter 3 Exercises
-
-Use the workbook provided and code your questions to all the below questions within one macro in the VB Editor. Rerun your macro after completing each question, to make sure your macro works correctly.
-
-Q1: Enter a body temperature in cell C1, using manual traditional Excel (no VBA).  Using VBA, write code that would display the message "Covid warning" in cell C2 if the temperature entered in cell C1 is above 37,5 degrees Celsius.
-
-Q2: Enter an age in cell C4, using manual traditional Excel (no VBA).  Using VBA, write code that would display the message "You may enter" in cell C5 if the age entered in cell C4 is 18 or above. Otherwise, the message "You may not enter" should appear.
-
-Q3: Enter a cricket batting average (usually between 10 and 50) in cell C17 and a batting strike rate (usually between 70 and 120) in cell C8, using manual traditional Excel (no VBA). Batsmen are picked for the cricket team if both of the following conditions are met: their batting average should be 40 or higher, and their batting strike rate should be 80 or higher. Write Using VBA, write code that would display the message "Yes" in cell C9 if the batsmen should be picked for the team. The message "No" should appear if the batsmen should not be picked for the team.
-
-Q4: Enter a cricket bowling average (usually between 20 and 40) in cell C11 and a bowling strike rate (usually between 40 and 60) in cell C12, using manual traditional Excel (no VBA). Bowlers are picked for the cricket team if either of the following conditions are met: their bowling average should be 30 or lower, or their bowling strike rate should be 50 or lower. Write Using VBA, write code that would display the message "Yes" in cell C13 if the bowler should be picked for the team. The message "No" should appear if the bowler should not be picked for the team.
-
-You can change your values in the blue input cells and rerun your macro to make sure that your macro correctly caters for all possible scenarios.
-
 # Chapter 4: Copy & Paste
 
 ##### Copy and Paste a single cell
@@ -288,13 +233,6 @@ Range("A1").CurrentRegion.Copy Range("D1")
 ![image-20211221144648185](C:\Users\hammans\Desktop\vbaccounting\Images\image-20211221144648185.png)
 
 The "Current Region" function in VBA is equivalent to pressing "Ctrl+A" to select the whole area in standard Excel.
-
-### Chapter 4 Exercises
-
-Use the workbook provided and code your questions to all the below questions within one macro in the VB Editor. Rerun your macro after completing each question, to make sure your macro works correctly.
-
-Q1: Copy the contents of cell A4 and paste it to cell C6.
-Q2: Copy the contents of the range A12:B15 and paste it to E15:G18
 
 # Chapter 5: Determine last row
 
@@ -338,10 +276,6 @@ We declare a variable with the name "lastrow" as type integer. We then assign it
 
 This method is recommended, as it will always work, regardless of whether your database contains empty cells.
 
-### Chapter 5 Exercises
-
-Use the workbook provided and declare a variable named "lastrow" and assign it a value equal to the lastrow of the database given. Assign cell G1 equal to the value of the 'lastrow' variable.
-
 # Chapter 6: Boxes
 
 ### Message box
@@ -376,10 +310,6 @@ When you need to obtain a lot of information from the user, it might be better t
 ![image-20220317154436343](C:\Users\hammans\Desktop\vbaccounting\Images\image-20220317154436343.png)
 
 How to create a user form falls outside the scope of this textbook.
-
-### Chapter 6 Exercises
-
-You are provided with a dataset containing a list of individuals, containing their name, year of birth and age. A button, for which no macro has yet been written, is also provided. When the button is pressed, a message should appear, asking the user for his/her name. After the user inputted a name and clicked OK, a new message should appear, asking the user for his/her year of birth. After the user inputted a number and clicked OK, the compiler should add an entry to the dataset (tip: determine the last row as done in Chapter 5, and add one to that variable to determine in which row the entry should be added), containing the name, year of birth and the age in 2022 (which it should calculate). A message should then appear, informing the user that the entry has been successfully added.
 
 # Chapter 7: Workbook Scopes
 
@@ -616,18 +546,18 @@ redWs.Range(redWs.Cells(2,1),redWs.Cells(lastrowRed,3)).Copy
 It might seem odd that we have to restate 'redWs' again before the cells reference, if we already state 'redWs' before the range referece. It is indeed odd. To explore this, let us look at similar scenarios.
 
 ```vb
-ThisWorkbook.Worksheets("Sheet1").Range("A1").Value = 2
+Worksheets("Sheet1").Range("A1").Value = 2
 ```
 
-In the above code, we have our main object, being this workbook. This object is followed by a sub-object, being one of its worksheets. This sub-object is followed by a sub-object, being one of its ranges. The VB Editor assumes that when starting a new "level" of reference, you want to keep the scopes of its predecessors.
+In the above code, we have our main object, being this worksheet. This object is followed by a sub-object, being one of its ranges. The VB Editor assumes that when starting a new "level" of reference, you want to keep the scopes of its predecessors.
 
 It would therefore seem logical that the following code should work:
 
 ```vb
-ThisWorkbook.Worksheets("Sheet1").Range(cells(1,1),cells(5,1)).Value = 5
+Worksheets("Sheet1").Range(cells(1,1),cells(5,1)).Value = 5
 ```
 
-When the code reaches cells A1 and A5, it should remember by its logical order that we are busy within the scope of this workbook and the worksheet titled sheet1?
+When the code reaches cells A1 and A5, it should remember by its logical order that we are busy within the scope of this worksheet titled sheet1?
 
 Create a new blank Excel workbook, and add another sheet, so there are two sheets: Sheet1 and Sheet2. Click on Sheet1 to make sure that that sheet is active. Then paste the above code in the VB editor. The code would execute perfectly:
 
@@ -639,50 +569,38 @@ Suddenly, you get the following error:
 
 ![image-20211221171601410](C:\Users\hammans\Desktop\vbaccounting\Images\image-20211221171601410.png)
 
-Why on earth is that??? The reason is that a cells reference within a range does not automatically assume you want to reference the same worksheet for the cells as for the range, even though logically it seems like it should. The cells reference therefore works a bit different than other references, as it the VB Editor does <u>not</u> assume that when starting a cells reference, you want to keep the scopes of its predecessors, unlike the case with range references or worksheets references. When you use the cell references, the VB Editor forgets previous stated scopes, and starts fresh. 
+Why on earth is that??? The reason is that a cells reference within a range does not automatically assume you want to reference the same worksheet for the cells as for the range, even though logically it seems like it should. The cells reference therefore works a bit different than other references, as it the VB Editor does <u>not</u> assume that when starting a cells reference, you want to keep the scopes of its predecessors, unlike the case with range references. When you use the cell references, the VB Editor forgets previous stated scopes, and starts fresh. 
 
 Let's inspect the first code again:
 
 ```vb
-ThisWorkbook.Worksheets("Sheet1").Range("A1").Value = 2
+Worksheets("Sheet1").Range("A1").Value = 2
 ```
 
 the VB Editor reads it as follows:
 
-* ThisWorkbook: Make sure we work within this workbook in which the macro is written.
-* Worksheets("Sheet1"): I am taking into account the previous workbook reference, and now we are going to make sure we work within the worksheet titled "Sheet1" within this workbook.
-* Range: I am taking into account the previous workbook reference as well as the previous worksheet reference , and now we are going to make sure we work within the range A1.
+* Worksheets("Sheet1"): Make sure we work within the worksheet titled "Sheet1".
+* Range: I am taking into account the previous worksheet reference, and now we are going to make sure we work within the range A1.
 
 Now let us add a cells reference:
 
 ```vb
-ThisWorkbook.Worksheets("Sheet1").Range(cells(1,1),cells(5,1)).Value = 5
+Worksheets("Sheet1").Range(cells(1,1),cells(5,1)).Value = 5
 ```
 
 the VB Editor reads it as follows:
 
-* ThisWorkbook: Make sure we work within this workbook in which the macro is written.
-* Worksheets("Sheet1"): I am taking into account the previous workbook reference, and now we are going to make sure we work within the worksheet titled "Sheet1" within this workbook.
-* Range: I am taking into account the previous workbook reference as well as the previous worksheet reference , and now we are going to make sure we work within the range as will follow after this
-* Cells: I am completely going to ignore previous references and start fresh. I am going to assume that cells(1,1) refers to cell A1 of the current workbook of the current worksheet, and I am going to assume that cells(5,1) refers to cell A5 of the current workbook of the current worksheet.
+* Worksheets("Sheet1"): We are going to make sure we work within the worksheet titled "Sheet1".
+* Range: I am taking into account the previous worksheet reference, and now we are going to make sure we work within the range as will follow after this
+* Cells: I am completely going to ignore previous references and start fresh. I am going to assume that cells(1,1) refers to cell A1 of the current worksheet, and I am going to assume that cells(5,1) refers to cell A5 of the current worksheet.
 
-When we had Sheet1 active, the code worked, as the "current workbook" and "current worksheets" that cells automatically uses, were by accident the predeceasing references. But as soon as we activated Sheet2 we got an error, because the VB Editor read it as follows: use cell A1 to A5 within the current worksheet, which is to be found in the worksheet titled "Sheet1". As the current worksheet is Sheet2, the code gives an error. Therefore the need to explicitly state the previous references before the cells reference again:
+When we had Sheet1 active, the code worked, as the "current worksheets" that cells automatically uses, were by accident the predeceasing references. But as soon as we activated Sheet2 we got an error, because the VB Editor read it as follows: use cell A1 to A5 within the current worksheet, which is to be found in the worksheet titled "Sheet1". As the current worksheet is Sheet2, the code gives an error. Therefore the need to explicitly state the previous references before the cells reference again:
 
 ```vb
-ThisWorkbook.Worksheets("Sheet1").Range(ThisWorkbook.Worksheets("Sheet1").cells(1,1),ThisWorkbook.Worksheets("Sheet1").cells(5,1)).Value = 5
+Worksheets("Sheet1").Range(Worksheets("Sheet1").cells(1,1),Worksheets("Sheet1").cells(5,1)).Value = 5
 ```
 
 When you correctly restate the references before the cells references, it is referred to as "qualifying" your cells references. Therefore the error when we did not restate it, is that our cells references were unqualified.
-
-### Chapter 7 Exercises
-
-### Part I
-
-Your are presented with 2 worksheets: one sheet containing players from Manchester City Football Club, and the other sheet containing players from Manchester United Football Club. In the third worksheet, titled "All Manchester", you want to combine these two pool of players into one database. Using VBA, create code that would execute this.
-
-### Part II
-
-Your are presented with 2 workbooks: one workbook containing item sales for July, and the other workbook containing item sales for August. In the third workbook, titled "Combined", you want to combine these two months of sales into one database. Two macros should be written inside the Combined workbook. The first macro should import the separate July and August workbooks as separate worksheets within the Combined workbook (use the template code provided in Chapter 7). The second macro should then combine these two months into one database.
 
 # Chapter 8: Loops
 
@@ -987,50 +905,9 @@ Let us assume we have a workbook containing 10 worksheets and we want to assign 
 Dim i as integer
 
 For i = 1 to 10
-	ThisWorkbook.Worksheets(i).Range("A1").Value = "Federer"
+	Worksheets(i).Range("A1").Value = "Federer"
 Next i
 ```
-
-### Chapter 8 Exercises
-
-### Part I - Merge Worksheets
-
-You are presented with a workbook containing sales made for each colour product in separate sheets. Your task is to merge all these separate datasets into one dataset in the worksheet titled 'Merged'.
-
-Tips: Loop through all colour worksheets (start at sheet 2) and for each each sheet, determine the last row to determine the range to be copied, and determine where to start pasting in the 'Merged sheet' (row after its last row) and paste it over.
-
-### Part II - Merge Workbooks
-
-Your are presented with separate workbooks containing sales made for each colour product. Your tasks are to:
-
-1. Import every workbook into one single workbook as separate worksheets AND rename each worksheet to the colour of that dataset.
-2. Merge all these separate datasets into one dataset.
-
-### Part III - Reverse Merge (Extract)
-
-Your are presented with a database containing sales made for all colour products. Your task is to create a separate dataset for all respective colours in separate worksheets (basically the reverse of task 2). After the macro has been executed, a message should appear informing the user that the macro ran successfully. Allocate this macro to the button provided.
-
-Tips: You will have a loop within a loop. The outer loop will loop through each entry in the dataset in the 'Merged' sheet, while the inner loop will loop through each worksheet. First, loop through the entries in the dataset. For each entry, we need to find the sheet who's name matches the colour of that product. This is done by looping through all the colour worksheets, then if the name of the worksheet (in inner loop) equals the colour of our entry (in the outer loop), then we need to determine where to start pasting in that sheet, and paste the entry there.
-
-### Part IV - Semi Structured Dataset
-
-Your are presented with a database containing sales made for all colour products. This dataset is semi-structured. Your task is to transform this dataset into a structured relational dataset in the other worksheet provided.
-
-Tips: Create a variable that would store the colour name. Loop through each row in the semi-structured dataset. If the value of the cell in column A is "Colour:" then store the value next to it as the value for the colour variable. If the value of the cell in column A is "Date" then do nothing (just have no code in that if section). Otherwise (if none of the previous two conditions are met), the date, amount and colour of that entry should be pasted to the structured dataset. Note: do not use copy and paste. Rather first assign column A of structured dataset equal to the value as found in column A of the semi-structured dataset, then assign column B of the structured dataset equal to variable of colour at that stage, then assign column C of the structured dataset equal to the value as found in column B of the semi-structured dataset.
-
-### Part V - Balance Updates
-
-You are required to build a system that would enable a user to easily add an invoice or payment to a customer account, and update its outstanding balance accordingly.
-
-You are presented with a workbook containing:
-
-- A worksheet titled 'Buttons', containing two buttons
-- A worksheet for every customer, titled by its customer number.
-
-When clicking on the 'Add invoice' or 'Add Payment' button, a message should appear asking the user to input the customer number to whom this invoice/payment should be levied. After the user inputted the number and clicked 'OK', a message should then appear asking the user to input the invoice/payment amount. After the user inputted the amount and clicked 'OK', an entry should be added to the applicable customer account in that worksheet, containing the date of the document (hint: use 'today()' function), the document type (pending on which button clicked), the amount (if it is a payment, it should be negative), and the updated balance of the customer. A message should then appear indicating to the user that the transaction was added successfully.
-
-Create two separate macros for each button respectively.
-
 # Chapter 9: Arrays
 
 An array is a type of variable that can store more than one value. It is often more logical to store a range of values inside the same variable as an array, rather than declaring each value as a separate variable.
@@ -1094,19 +971,6 @@ Range("E1").Value = playersArray(2, 2)
 ```
 
 In the first line, we declared an array variable. In the brackets, we omit the size of the array. We then declare a variable called "arrayLastPos" which will be used to determine how many elements the first dimension of the array should hold , which is calculated as the last row of the dataset, minus 1. We then "redeclare" the array, using ReDim, now indicating the size the array should hold. Note how we use the variable in indicating the size of the first dimension. Note that it is necessary to first declare the array without indicating any size, and only thereafter redeclare it with the appropriate size, when using dynamic arrays (dynamic arrays refer to arrays where the size is determined by the size of the presented dataset, which in this case we calculated with "arrayLastPos"). When then assign whole range of the dataset (excluding headings) to the array.
-
-### Chapter 9 Exercises
-
-You are presented with a sheet containing sales of red, blue, green and yellow items respectively. The goal is to create an extract of each colour to their own respective datasets. Macros have already been written and allocated to buttons that will enable this. There are 3 methods that this exercise can be done, for which 3 separate macros were created:
-
-1. Copy and Paste: For each row, determine if it is a certain colour, and if so, copy that region (line-item columns) and paste it under the applicable colour heading.
-
-2. Assign values:  For each row, determine if it is a certain colour, and if so, assign the cells of the first empty line under the colour section equal to the values as found in that row in the complete dataset.
-3. Arrays: Assign the complete dataset to an array. Then create new arrays for each colour. Loop through all elements of the total array, and if the colour of that element is a certain colour, assign the elements of that colour's array equal to those values in the total array. Then finally, assign the region of that colours extract equal to the colours' array.
-
-Inspect the syntax of the array method and obtain an understanding of its workings.
-
-The goal of this exercise is to indicate the difference in time it takes to execute each macro (the extracts should be deleted each time before executing the next macro, as they all result in the same thing). You will notice that the first method could take up to a minute, while the second method is a bit faster, and the third method (using arrays) takes less than one second!
 
 # Chapter 10: Functions
 
@@ -1307,405 +1171,3 @@ Function convertToRand(foreignArr as Variant)
 	convertToRand = forreignArr
 End Function
 ```
-
-### Extensive example: Extract types of products
-
-This example will illustrate how functions can be used to "reperform" a certain block of code. The example used will be similar to the task of extracting samples in a working paper during an external audit and will therefore display the utility of functions in practice. We want to create a summary of all entries per colours, with neat headings in between. We are going to perform this two ways: first without using function, and then using functions. Macros have already been written and allocated to buttons that will enable this. Execute the 'Run without functions' to get an idea of what is trying to be achieved. Inspect the syntax of the function method and obtain an understanding of its workings. You might note that using functions does not decrease the time it takes to execute the macro, and nor does it really lead to less lines of code being written. So what are the benefits of using functions here?
-
-- A certain action is only written once inside the function, thereby decreasing the likelihood of coding errors when repeating code throughout the macro.
-- It is easier to read
-- When coding, it is easier to pass new data to existing functions, rather than needing to apply computational thinking again in rewriting code.
-
-# Exercises Solutions
-
-### <u>Chapter 1</u>
-
-Using "range":
-
-```vb
-Range("B1").Value = "Roger"
-Range("B2").Value = "Federer"
-Range("B3").Value = 1981
-Range("B4").Value = 40
-Range("B6").Value = Range("B3").Value + Range("B4").Value
-Range("C9:E11").Value = 420
-```
-
-Using "cells":
-
-```vb
-Cells(1,2).Value = "Roger"
-Cells(2,2).Value = "Federer"
-Cells(3,2).Value = 1981
-Cells(4,2).Value = 40
-Cells(6,2).Value = Cells(3,2).Value + Cells(4,2).Value
-Range(Cells(9,3),Cells(11,5)).Value = 420
-```
-
-### <u>Chapter 2</u>
-
-```vb
-Dim nameSurname As String
-nameSurname = "Hamman Schoonwinkel"
-Range("B1").Value = nameSurname
-
-Dim yearBirth As Integer
-yearBirth = 1993
-Range("B2").Value = yearBirth
-
-Dim age As Integer
-age = Range("F1").Value
-Range("B3").Value = age
-
-Dim idNumber As Double
-idNumber = 9305266058079
-Range("B4").Value = idNumber
-
-Dim currentYear As Integer
-currentYear = yearBirth + age
-Range("B6").Value = currentYear
-
-age = age + 5
-
-currentYear = yearBirth + age
-Range("B6").Value = currentYear
-
-Dim i As Integer
-i = Range("B10").Value
-
-Dim j As Integer
-j = Range("B11").Value
-
-Cells(i, j).Value = "Federer"
-```
-
-### <u>Chapter 3</u>
-
-```vb
-'Question 1
-If Range("C1").Value > 37.5 Then
-    Range ("C2").Value = "Covid warning"
-End If
-
-'Question 2
-If Range("C4").Value >=18 Then
-    Range("C5").Value = "You may enter"
-Else
-    Range("C5").Value = "You may not enter"
-End If
-
-'Question 3
-If Range("C7").Value >= 40 And Range("C8").Value >= 80 Then
-    Range("C9").Value = "Yes"
-Else
-    Range("C9").Value = "No"
-End If
-
-'Question 4
-If Range("C11").Value <= 30 Or Range("C12").Value <= 50 Then
-    Range("C13").Value = "Yes"
-Else
-    Range("C13").Value = "No"
-End If
-```
-
-### <u>Chapter 4</u>
-
-```vb
-Range("A4").Copy Range("C6")
-
-Range("A12:B15").Copy Range("E15") 'or Range("A12").CurrentRegion.Copy Range("E15")
-
-```
-
-### <u>Chapter 5</u>
-
-```vb
-Dim lastrow as Integer
-lastrow = cells(rows.count,1).End(xlUp).row
-Range("G1").Value = lastrow
-```
-
-### <u>Chapter 6</u>
-
-```vb
-Dim name as String
-Dim yearOfBirth as Integer
-Dim age as Integer
-Dim addEntryRow as Integer
-
-addEntryRow = cells(rows.count,1).End(xlUp).row + 1
-name = InputBox("Please enter your name:")
-yearOfBirth = InputBox("Please enter your year of birth:")
-age = 2022 - yearOfBirth
-
-addEntryRow = cells(rows.count,1).End(xlUp).row + 1
-cells(addEntryRow,1).Value = name
-cells(addEntryRow,2).Value = yearOfBirth
-cells(addEntryRow,3).Value = age
-
-MsgBox "Entry added succesfully"
-```
-
-### <u>Chapter 7</u>
-
-### Part I
-
-```vb
-Dim cityWs as Worksheet
-Dim unitedWs as Worksheet
-Dim combinedWs as Worksheet
-
-Set cityWs = Worksheets("Manchester City")
-Set unitedWs = Worksheets("Manchester United")
-Set combinedWs = Worksheets("All Manchester")
-
-'Determine city range and copy and paste over to combined sheet:
-Dim lastrowCity as Integer
-lastrowCity = cityWs.cells(rows.count,1).End(xlUp).row
-cityWs.Range(cityWs.Cells(2,1),cityWs.Cells(lastrowCity,5)).Copy combinedWs.Range("A2")
-
-'Determine united range and copy and paste over to combined sheet:
-Dim lastrowUnited as Integer
-lastrowUnited = unitedWs.cells(rows.count,1).End(xlUp).row
-Dim startPaste as Integer
-startPaste = combinedWs.cells(rows.count,1).End(xlUp).row + 1
-unitedWs.Range(unitedWs.Cells(2,1),unitedWs.Cells(lastrowUnited,5)).Copy combinedWs.Cells(startPaste,1)
-```
-
-### Part II
-
-First macro:
-
-```vb
-'This code was just copied as provided in Chapter 6
-
-Dim fnameList, fnameCurFile As Variant
-Dim countFiles, countSheets As Integer
-Dim wksCurSheet As Worksheet
-Dim wbkCurBook, wbkSrcBook As Workbook
- 
-fnameList = Application.GetOpenFilename(FileFilter:="Microsoft Excel Workbooks (*.xls;*.xlsx;*.xlsm),*.xls;*.xlsx;*.xlsm", Title:="Choose Excel files to merge", MultiSelect:=True)
- 
-If (vbBoolean <> VarType(fnameList)) Then
-	If (UBound(fnameList) > 0) Then
-		countFiles = 0
-		countSheets = 0
-        
-		Application.ScreenUpdating = False
-		Application.Calculation = xlCalculationManual
-		Set wbkCurBook = ActiveWorkbook
-            
-		For Each fnameCurFile In fnameList
-			countFiles = countFiles + 1
-			Set wbkSrcBook = Workbooks.Open(Filename:=fnameCurFile)
-			For Each wksCurSheet In wbkSrcBook.Sheets
-				countSheets = countSheets + 1
-				wksCurSheet.Copy after:=wbkCurBook.Sheets(wbkCurBook.Sheets.Count)
-			Next
-			wbkSrcBook.Close SaveChanges:=False
-		Next
- 
-		Application.ScreenUpdating = True
-		Application.Calculation = xlCalculationAutomatic
- 
-         MsgBox "Processed " & countFiles & " files" & vbCrLf & "Merged " & countSheets & " 			worksheets", Title:="Merge Excel files"
-	End If
-Else
-	MsgBox "No files selected", Title:="Merge Excel files"
-End If
-```
-
-Second macro:
-
-At this stage we now have one workbook containing three worksheets. Note that the sheets imported appear at the end. As worksheets are added to the workbook, it starts at the right. So first it imported the August sheet (depending on which one you clicked first, probably August if your files are sorted alphabetically) and added it to the right. Then it imported the July sheet and added it to the right, thereby making August now the middle sheet. Also note that these new sheets are not titled by their original workbook name. We will therefore have to refer to them by reference to their order, rather than their name, as we would not know their new name before importing. 
-
-```vb
-Dim julyWs As Worksheet
-Dim augustWs As Worksheet
-Dim combinedWs As Worksheet
-
-'Now reference sheets by order!
-Set julyWs = Worksheets(3)
-Set augustWs = Worksheets(2)
-Set combinedWs = Worksheets(1)
-
-'Determine July range and copy and paste over to combined sheet:
-Dim lastrowJuly As Integer
-lastrowJuly = julyWs.Cells(Rows.Count, 1).End(xlUp).Row
-julyWs.Range(julyWs.Cells(2, 1), julyWs.Cells(lastrowJuly, 6)).Copy combinedWs.Range("A2")
-
-'Determine August range and copy and paste over to combined sheet:
-Dim lastrowAugust As Integer
-lastrowAugust = augustWs.Cells(Rows.Count, 1).End(xlUp).Row
-Dim startPaste As Integer
-startPaste = combinedWs.Cells(Rows.Count, 1).End(xlUp).Row + 1
-augustWs.Range(augustWs.Cells(2, 1), augustWs.Cells(lastrowAugust, 6)).Copy combinedWs.Cells(startPaste, 1)
-```
-
-### <u>Chapter 8</u>
-
-### Part I
-
-```vb
-Dim i As Integer
-Dim lastRow As Integer
-Dim startPaste As Integer
-
-For i = 2 To 7
-    lastRow = Worksheets(i).Cells(Rows.Count, 1).End(xlUp).Row
-    startPaste = Worksheets(1).Cells(Rows.Count, 1).End(xlUp).Row + 1
-    Worksheets(i).Range(Worksheets(i).Cells(2, 1), Worksheets(i).Cells(lastRow, 3)).Copy Worksheets(1).Cells(startPaste, 1)
-Next i
-```
-
-### Part II
-
-First import separate workbooks into the one workbook as separate worksheets:
-
-```vb
-Refer to template code in Chapter 6
-```
-
-Then rename each sheet to its respective colour:
-
-```vb
-Dim i as integer
-
-For i = 2 to 7
-	Worksheets(i).Name = Worksheets(i).Range("B2").Value
-Next i
-```
-
-Then merge separate datasets into one dataset:
-
-```vb
-Dim j As Integer
-Dim lastRow As Integer
-Dim startPaste As Integer
-
-For i = 2 To 7
-    lastRow = Worksheets(i).Cells(Rows.Count, 1).End(xlUp).Row
-    startPaste = Worksheets(1).Cells(Rows.Count, 1).End(xlUp).Row + 1
-    Worksheets(i).Range(Worksheets(i).Cells(2, 1), 	Worksheets(i).Cells(lastRow, 3)).Copy Worksheets(1).Cells(startPaste, 1)
-Next i
-```
-
-### Part III
-
-```vb
-Dim i As Integer 'will be used to loop through entries
-Dim j As Integer 'will be used to loop through worksheets
-Dim lastRow As Integer
-Dim startPaste As Integer
-
-lastRow = Worksheets(1).Cells(Rows.Count, 1).End(xlUp).Row
-
-'Loop through each entry in merged dataset
-For i = 2 To lastRow
-    'Loop through each worksheet and find the colour
-    For j = 2 To 7
-        If Worksheets(j).Name = Worksheets(1).Cells(i, 2).Value Then
-            startPaste = Worksheets(j).Cells(Rows.Count, 1).End(xlUp).Row + 1
-            Worksheets(1).Range(Worksheets(1).Cells(i, 1), Worksheets(1).Cells(i, 3)).Copy Worksheets(j).Cells(startPaste, 1)
-        End If
-    Next j
-Next i
-
-MsgBox "Extract performed succesfully"
-```
-
-### Part IV
-
-```vb
-Dim lastRow As Integer
-Dim startPaste As Integer
-Dim i As Integer
-Dim messWs As Worksheet
-Dim tidyWs As Worksheet
-Dim colour As String
-
-Set messWs = Worksheets("SemiStructured")
-Set tidyWs = Worksheets("Structured")
-
-lastRow = messWs.Cells(Rows.Count, 1).End(xlUp).Row
-
-For i = 1 To lastRow
-    If messWs.Cells(i, 1).Value = "Colour:" Then
-        colour = messWs.Cells(i, 2).Value
-    ElseIf messWs.Cells(i, 1).Value = "Date" Then
-        'do nothing
-    Else
-        startPaste = tidyWs.Cells(Rows.Count, 1).End(xlUp).Row + 1
-        tidyWs.Cells(startPaste, 1).Value = messWs.Cells(i, 1).Value
-        tidyWs.Cells(startPaste, 2).Value = colour
-        tidyWs.Cells(startPaste, 3).Value = messWs.Cells(i, 2).Value
-    End If
-Next i
-```
-
-### Part V
-
-Invoice button:
-
-```vb
-Dim accNumber As Integer
-Dim invoiceAmount As Integer
-Dim startPaste As Integer
-Dim i As Integer
-
-'Enter account number
-accNumber = InputBox("Enter account number:")
-
-'Enter invoice amount
-invoiceAmount = InputBox("Enter invoice amount:")
-
-'Find sheet
-For i = 2 To 39
-    If Worksheets(i).Name = accNumber Then
-        startPaste = Worksheets(i).Cells(Rows.Count, 1).End(xlUp).Row + 1
-        Worksheets(i).Cells(startPaste, 1).Value = Date
-        Worksheets(i).Cells(startPaste, 2).Value = "Invoice"
-        Worksheets(i).Cells(startPaste, 3).Value = invoiceAmount
-        Worksheets(i).Cells(startPaste, 4).Value = Worksheets(i).Cells(startPaste - 1, 4).Value + Worksheets(i).Cells(startPaste, 3).Value
-        MsgBox "Invoice succesfully added"
-        Worksheets(i).Activate
-    End If
-Next i
-```
-
-Payment button:
-
-```vb
-Dim accNumber As Integer
-Dim paymentAmount As Integer
-Dim startPaste As Integer
-Dim i As Integer
-
-'Enter account number
-accNumber = InputBox("Enter account number:")
-
-'Enter payment amount
-paymentAmount = InputBox("Enter payment amount: (positive)")
-
-'Find sheet
-For i = 2 To 39
-    If Worksheets(i).Name = accNumber Then
-        startPaste = Worksheets(i).Cells(Rows.Count, 1).End(xlUp).Row + 1
-        Worksheets(i).Cells(startPaste, 1).Value = Date
-        Worksheets(i).Cells(startPaste, 2).Value = "Payment"
-        Worksheets(i).Cells(startPaste, 3).Value = paymentAmount * -1
-        Worksheets(i).Cells(startPaste, 4).Value = Worksheets(i).Cells(startPaste - 1, 4).Value + Worksheets(i).Cells(startPaste, 3).Value
-        MsgBox "Payment succesfully added"
-        Worksheets(i).Activate
-    End If
-Next i
-```
-
-### <u>Chapter 9</u>
-
-Solution already provided in the workbook
-
-### <u>Chapter 10</u>
-
-Solution already provided in the workbook
